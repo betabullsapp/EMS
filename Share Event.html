@@ -37,8 +37,6 @@ License: You must have a valid license purchased only from themeforest(the above
 <link href="assets/global/plugins/jqvmap/jqvmap/jqvmap.css" rel="stylesheet" type="text/css"/>
 <!-- END PAGE LEVEL PLUGIN STYLES -->
 <!-- BEGIN PAGE STYLES -->
-<link href="assets/global/plugins/bootstrap-fileinput/bootstrap-fileinput.css" rel="stylesheet" type="text/css"/>
-<link href="assets/admin/pages/css/profile.css" rel="stylesheet" type="text/css"/>
 <link href="assets/admin/pages/css/tasks.css" rel="stylesheet" type="text/css"/>
 <!-- END PAGE STYLES -->
 <!-- BEGIN THEME STYLES -->
@@ -50,15 +48,6 @@ License: You must have a valid license purchased only from themeforest(the above
 <link href="assets/admin/layout/css/custom.css" rel="stylesheet" type="text/css"/>
 <!-- END THEME STYLES -->
 <link rel="shortcut icon" href="favicon.ico"/>
-<style>
-	.cir{
-		-webkit-border-radius: 150% ! important;
-		height: 181px !important;
-		width: 181px !important;
-		border: 1px solid black !important;
-	}
-	
-</style>
 </head>
 <!-- END HEAD -->
 <!-- BEGIN BODY -->
@@ -79,7 +68,7 @@ License: You must have a valid license purchased only from themeforest(the above
 		<!-- BEGIN LOGO -->
 		<div class="page-logo">
 			<a href="index.html">
-			<img src="assets/images/logo.png" alt="logo" class="logo-default" style="margin: 7px 0px 0px -38px;!important; height: 32px;!important; width: 227px;!important;"/><!--b><h4 class="green-haze">EventManagement</h4></b-->
+			<!--img src="assets/admin/layout/img/logo.png" alt="logo" class="logo-default"/--><h4>EventManagement</h4>
 			</a>
 			<div class="menu-toggler sidebar-toggler hide">
 				<!-- DOC: Remove the above "hide" to enable the sidebar toggler button on header -->
@@ -96,6 +85,13 @@ License: You must have a valid license purchased only from themeforest(the above
 				<!-- BEGIN NOTIFICATION DROPDOWN -->
 				<!-- DOC: Apply "dropdown-dark" class after below "dropdown-extended" to change the dropdown styte -->
 				
+				<!-- END NOTIFICATION DROPDOWN -->
+				<!-- BEGIN INBOX DROPDOWN -->
+				<!-- DOC: Apply "dropdown-dark" class after below "dropdown-extended" to change the dropdown styte -->
+				
+				<!-- END INBOX DROPDOWN -->
+				<!-- BEGIN TODO DROPDOWN -->
+				<!-- DOC: Apply "dropdown-dark" class after below "dropdown-extended" to change the dropdown styte -->
 				
 				<!-- END TODO DROPDOWN -->
 				<!-- BEGIN USER LOGIN DROPDOWN -->
@@ -113,8 +109,9 @@ License: You must have a valid license purchased only from themeforest(the above
 							<i class="icon-user"></i> My Profile </a>
 						</li>
 						<li>
-							<a href="page_calendar.html">
-							<i class="icon-settings"></i> Settings </a>
+							<a href="page_todo.html">
+							<i class="icon-diamond"></i> Settings 
+							</a>
 						</li>
 						
 						<li>
@@ -126,11 +123,9 @@ License: You must have a valid license purchased only from themeforest(the above
 				<!-- END USER LOGIN DROPDOWN -->
 				<!-- BEGIN QUICK SIDEBAR TOGGLER -->
 				<!-- DOC: Apply "dropdown-dark" class after below "dropdown-extended" to change the dropdown styte -->
-				<!--li class="dropdown dropdown-quick-sidebar-toggler">
-					<a href="javascript:;" class="dropdown-toggle">
-					<i class="icon-logout"></i>
-					</a>
-				</li-->
+				<li class="dropdown dropdown-quick-sidebar-toggler">
+					
+				</li>
 				<!-- END QUICK SIDEBAR TOGGLER -->
 			</ul>
 		</div>
@@ -170,26 +165,23 @@ License: You must have a valid license purchased only from themeforest(the above
 						<a href="javascript:;" class="remove">
 						<i class="icon-close"></i>
 						</a>
-						<!--div class="input-group">
-							<input type="text" class="form-control" placeholder="Search...">
-							<span class="input-group-btn">
-							<a href="javascript:;" class="btn submit"><i class="icon-magnifier"></i></a>
-							</span>
-						</div-->
+						<div class="input-group">
+							
+						</div>
 					</form>
 					<!-- END RESPONSIVE QUICK SEARCH FORM -->
 				</li>
-				<li >
+				<li class="start active open">
 					<a href="dashboard.html">
 					<i class="icon-home"></i>
 					<span class="title">Dashboard</span>
-					
+					<span class="selected"></span>
 					<span class="arrow open"></span>
 					</a>
 					
 				</li>
 				<li>
-					<a href="CreateEvent.html">
+					<a href="createevent.html">
 					<i class="icon-basket"></i>
 					<span class="title">Create New Event</span>
 					<span class="arrow "></span>
@@ -197,12 +189,11 @@ License: You must have a valid license purchased only from themeforest(the above
 					
 				</li>
 				
-				<li class="start active open">
-					<a href="MyProfile.html">
+				<li>
+					<a href="profile.html">
 					<i class="icon-rocket"></i>
 					<span class="title">MyProfile</span>
-					<span class="selected"></span>
-					<span class="arrow open"></span>
+					<span class="arrow "></span>
 					</a>
 					
 				</li>
@@ -215,7 +206,7 @@ License: You must have a valid license purchased only from themeforest(the above
 					
 				</li>
 				<li>
-					<a href="GenerateCoupons.html">
+					<a href="coupons.html">
 					<i class="icon-puzzle"></i>
 					<span class="title">Generate Coupons</span>
 					<span class="arrow "></span>
@@ -228,189 +219,36 @@ License: You must have a valid license purchased only from themeforest(the above
 	</div>
 	<!-- END SIDEBAR -->
 	<div class="page-content-wrapper">
-		<div class="page-content" >
-			<h3 class="page-title">
-			My Profile 
-			</h3>
-			<div class="page-bar">
-				<ul class="page-breadcrumb">
-					<li>
-						<i class="fa fa-home"></i>
-						<a href="index.html">Home</a>
-						<i class="fa fa-angle-right"></i>
-					</li>
-					<li>
-						<a href="#">MyProfile</a>
-					</li>
-				</ul>
-				<!--div class="page-toolbar">
-					<div id="dashboard-report-range" class="pull-right tooltips btn btn-fit-height grey-salt" data-placement="top" data-original-title="Change dashboard date range">
-						<i class="icon-calendar"></i>&nbsp; <span class="thin uppercase visible-lg-inline-block">March 18, 2015 - April 16, 2015</span>&nbsp; <i class="fa fa-angle-down"></i>
-					</div>
-				</div-->
-			</div>
-			<!--h2>Account Information</h2><hr/-->
-			<div class="row margin-top-20">
-				<div class="col-md-12">
-					<!-- BEGIN PROFILE SIDEBAR -->
-					<div class="profile-sidebar">
-						<!-- PORTLET MAIN -->
-						
-						<div class="form-group">
-				
-							<!--div action="#" class="form-horizontal pull-left portlet light profile-sidebar-portlet"-->
-							<div class="portlet light profile-sidebar-portlet">
-								<!-- SIDEBAR USERPIC -->
-								<div class="profile-userpic">
-									<img src="assets/admin/pages/media/profile/profile_user.jpg" class="img-responsive useriamge cir" alt="">
-								</div>
-								<br>
-								<center>
-									<span class="btn btn-primary btn-file">
-										<input type="file" onchange="CopyMe(this, 'txtFileName');" id="profile_image" class="file fileinput-new">Change your picture
-									</span>
-								</center>
-								<!--/div-->
-        
-							</div>
-				
-						</div>
-						<!-- END PORTLET MAIN -->
-						<!-- PORTLET MAIN -->
-						
-						<!-- END PORTLET MAIN -->
-					</div>
-					<!-- END BEGIN PROFILE SIDEBAR -->
-					<!-- BEGIN PROFILE CONTENT -->
-					<div class="profile-content">
-						<div class="row">
-							<div class="col-md-12">
-								<div class="portlet light">
-									<div class="portlet-title tabbable-line">
-										<div class="caption caption-md">
-											<i class="icon-globe theme-font hide"></i>
-											<span class="caption-subject font-blue-madison bold uppercase">Account Information</span>
-										</div>
-										<!--ul class="nav nav-tabs">
-											<li class="active">
-												<a href="#tab_1_1" data-toggle="tab">Personal Info</a>
-											</li>
-											<li>
-												<a href="#tab_1_2" data-toggle="tab">Change Avatar</a>
-											</li>
-											<li>
-												<a href="#tab_1_3" data-toggle="tab">Change Password</a>
-											</li>
-											<li>
-												<a href="#tab_1_4" data-toggle="tab">Privacy Settings</a>
-											</li>
-										</ul-->
-									</div>
-									<div class="portlet-body">
-									  <form role="form" action="#">
-										<div class="tab-content">
-											<!-- PERSONAL INFO TAB -->
-											<div class="tab-pane active" id="tab_1_1">
-												
-												<div class="col-md-6">
-													<div class="form-group">
-														<label class="control-label">First Name</label>
-														<input type="text" placeholder="John" class="form-control">
-													</div>
-													<div class="form-group">
-														<label class="control-label">Last Name</label>
-														<input type="text" placeholder="Doe" class="form-control">
-													</div>
-													<div class="form-group">
-														<label class="control-label">Email</label>
-														<input type="text" placeholder="john@yahoo.com" class="form-control">
-													</div>
-													<div class="form-group">
-														<label class="control-label">Home Phone</label>
-														<input type="text" placeholder="+1 646 864 (456)" class="form-control">
-													</div>
-													<div class="form-group">
-														<label class="control-label">Mobile No</label>
-														<input type="text" placeholder="9865848958" class="form-control">
-													</div>
-													<div class="form-group">
-														<label class="control-label">Address 1</label>
-														<textarea class="form-control" rows="3" placeholder=""></textarea>
-													</div>
-												</div>
-												
-												<div class="col-md-6">
-													<div class="form-group">
-														<label class="control-label">Address 2</label>
-														<textarea rows="3" placeholder="" class="form-control"></textarea>
-													</div>
-													<div class="form-group">
-														<label class="control-label">City</label>
-														<input type="text" placeholder="New Jersey" class="form-control">
-													</div>
-													<div class="form-group">
-														<label class="control-label">State</label>
-														<input type="text" placeholder="New Jersey" class="form-control">
-													</div>
-													<div class="form-group">
-														<label class="control-label">Country</label>
-														<input type="text" placeholder="USA" class="form-control">
-													</div>
-													<div class="form-group">
-														<label class="control-label">Zip/Postal Code</label>
-														<input type="text" placeholder="54445" class="form-control">
-													</div>
-												</div>
-													
-												<div class="form-actions">
-													<div class="row">
-														<div class="col-md-offset-3 col-md-9">
-															<button type="submit" class="btn purple"><i class="fa fa-check"></i> Update</button>
-															<button type="button" class="btn default">Cancel</button>
-														</div>
-													</div>
-												</div>
-													
-													
-												
-											</div>
-											<!-- END PERSONAL INFO TAB -->																																											
-										</div>
-									  </form>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-					<!-- END PROFILE CONTENT -->
-				</div>
-			</div> 
-			
-			<!--div class="portlet-body form">
-							<form class="form-horizontal" role="form">
-								<div class="form-body">
-									<div class="form-group">
-										<label class="col-md-3 control-label">First Name</label>
-										<div class="col-md-9">
-											<input type="text" class="form-control input-inline input-medium" placeholder="First Name">	
-										</div>
-									</div>
-									
-									
-								</div>
-								<div class="form-actions">
-									<div class="row">
-										<div class="col-md-offset-3 col-md-9">
-											<button type="submit" class="btn green">Submit</button>
-											<button type="button" class="btn default">Cancel</button>
-										</div>
-									</div>
-								</div>
-							</form>
-						</div-->
-						
-		</div>
+		<div class="page-content" style="min-height:1028px">
+			<!-- BEGIN SAMPLE PORTLET CONFIGURATION MODAL FORM-->
+			 <div class="col-md-3"></div>
+		  <div class="col-md-6">
+           <div class="portlet blue-hoki box">
+                <div class="portlet-title">
+                    <div class="caption">
+                      Share This Event
+                     </div>
+                </div>
+                    <div class="portlet-body">
+                       <div id="tree_1" class="tree-demo">
+					          <div class="from-group">
+							   <div class="row">
+							   <div class="col-md-1"></div>
+							   <div class="col-md-8">
+					           <a href="https://www.facebook.com"><button class='btn btn-primary' style="background:#297ACC;" ><i class="fa fa-facebook"></i>|facebook</button></a>
+                               <a href="https://www.linkedin.com"><button class='btn btn-primary' style="background:#2E8AE6;" href=''><i class="fa fa-linkedin"></i>|linkedin</button>
+							   <a href="https://www.share.com"><button class='btn btn-primary ' style="background:#297ACC;" href=''><i class="fa fa-share"></i>|Share</button></a>
+							   </div>
+							  </div>
+							  </div>
+				          </div>
+                       <div>
+                    </div>
+           </div>
+     
+		 </div>	
 	</div>
+</div>
 <!-- END CONTAINER -->
 <!-- BEGIN FOOTER -->
 <div class="page-footer">
@@ -466,9 +304,6 @@ License: You must have a valid license purchased only from themeforest(the above
 <script src="assets/admin/layout/scripts/demo.js" type="text/javascript"></script>
 <script src="assets/admin/pages/scripts/index.js" type="text/javascript"></script>
 <script src="assets/admin/pages/scripts/tasks.js" type="text/javascript"></script>
-<script src="assets/global/plugins/bootstrap-fileinput/bootstrap-fileinput.js" type="text/javascript"></script>
-
-
 <!-- END PAGE LEVEL SCRIPTS -->
 <script>
 jQuery(document).ready(function() {    
@@ -486,21 +321,6 @@ jQuery(document).ready(function() {
    Tasks.initDashboardWidget();
 });
 </script>
-<script src="http://code.jquery.com/jquery-1.9.1.js"></script>
-		<script> 
-		 $(function () {
-        $('#profile_image').change(function (e) {
-
-            var img = URL.createObjectURL(e.target.files[0]);
-            if (img) {
-                $('.useriamge').attr('src', img);
-            }
-            else {
-                preventDefault(e);
-            }
-        });
-    });
-	</script>
 <!-- END JAVASCRIPTS -->
 </body>
 <!-- END BODY -->
