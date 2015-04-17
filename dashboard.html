@@ -68,7 +68,7 @@ License: You must have a valid license purchased only from themeforest(the above
 		<!-- BEGIN LOGO -->
 		<div class="page-logo">
 			<a href="index.html">
-			<!--img src="assets/admin/layout/img/logo.png" alt="logo" class="logo-default"/--><b><h4 class="green-haze">EventManagement</h4></b>
+			<img src="assets/images/logo.png" alt="logo" class="logo-default" style="margin: 7px 0px 0px -38px;!important; height: 32px;!important; width: 227px;!important;"/><!--b><h4 class="green-haze">EventManagement</h4></b-->
 			</a>
 			<div class="menu-toggler sidebar-toggler hide">
 				<!-- DOC: Remove the above "hide" to enable the sidebar toggler button on header -->
@@ -147,12 +147,12 @@ License: You must have a valid license purchased only from themeforest(the above
 						<a href="javascript:;" class="remove">
 						<i class="icon-close"></i>
 						</a>
-						<div class="input-group">
+						<!--div class="input-group">
 							<input type="text" class="form-control" placeholder="Search...">
 							<span class="input-group-btn">
 							<a href="javascript:;" class="btn submit"><i class="icon-magnifier"></i></a>
 							</span>
-						</div>
+						</div-->
 					</form>
 					<!-- END RESPONSIVE QUICK SEARCH FORM -->
 				</li>
@@ -166,7 +166,7 @@ License: You must have a valid license purchased only from themeforest(the above
 					
 				</li>
 				<li>
-					<a href="CreatEevent.html">
+					<a href="CreateEvent.html">
 					<i class="icon-basket"></i>
 					<span class="title">Create New Event</span>
 					<span class="arrow "></span>
@@ -205,29 +205,7 @@ License: You must have a valid license purchased only from themeforest(the above
 	<!-- END SIDEBAR -->
 	<div class="page-content-wrapper">
 		<div class="page-content" style="min-height:1028px">
-			<!-- BEGIN SAMPLE PORTLET CONFIGURATION MODAL FORM-->
-			<div class="modal fade" id="portlet-config" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-				<div class="modal-dialog">
-					<div class="modal-content">
-						<div class="modal-header">
-							<button type="button" class="close" data-dismiss="modal" aria-hidden="true"></button>
-							<h4 class="modal-title">Modal title</h4>
-						</div>
-						<div class="modal-body">
-							 Widget settings form goes here
-						</div>
-						<div class="modal-footer">
-							<button type="button" class="btn blue">Save changes</button>
-							<button type="button" class="btn default" data-dismiss="modal">Close</button>
-						</div>
-					</div>
-					<!-- /.modal-content -->
-				</div>
-				<!-- /.modal-dialog -->
-			</div>
-			<!-- /.modal -->
-			<!-- END SAMPLE PORTLET CONFIGURATION MODAL FORM-->
-			
+						
 			<!-- BEGIN PAGE HEADER-->
 			<h3 class="page-title">
 			Dashboard <small>reports &amp; statistics</small>
@@ -268,7 +246,7 @@ License: You must have a valid license purchased only from themeforest(the above
 								 1349
 							</div>
 							<div class="desc">
-								 New Feedbacks
+								 Total Events
 							</div>
 						</div>
 						<a class="more" href="#">
@@ -283,10 +261,10 @@ License: You must have a valid license purchased only from themeforest(the above
 						</div>
 						<div class="details">
 							<div class="number">
-								 12,5M$
+								 120
 							</div>
 							<div class="desc">
-								 Total Profit
+								 Total Participants
 							</div>
 						</div>
 						<a class="more" href="#">
@@ -301,10 +279,10 @@ License: You must have a valid license purchased only from themeforest(the above
 						</div>
 						<div class="details">
 							<div class="number">
-								 549
+								 49 $
 							</div>
 							<div class="desc">
-								 New Orders
+								 Total Amount
 							</div>
 						</div>
 						<a class="more" href="#">
@@ -322,7 +300,7 @@ License: You must have a valid license purchased only from themeforest(the above
 								 +89%
 							</div>
 							<div class="desc">
-								 Brand Popularity
+								 Total Discount
 							</div>
 						</div>
 						<a class="more" href="#">
@@ -339,20 +317,18 @@ License: You must have a valid license purchased only from themeforest(the above
 				<div class="col-md-6 col-sm-6">
 					<div class="portlet box purple-wisteria">
 						<div class="portlet-title">
-							<div class="caption">
-								<i class="fa fa-calendar"></i>Event
+							<div class="caption" style="padding:0 0;">
+								<h4> <i class="fa fa-calendar"></i> Event </h4>
 							</div>
-							<div class="actions">
+							<div class="actions" style="padding:0 0;">
 								<h4>Live</h4>
 							</div>
 						</div>
 						<div class="portlet-body">
 							<div class="row">
 								<div class="col-md-12">
-									<h4 class="pull-right">SAT, APR 11 12:00 PM</h4>
 									<div class="col-md-8">
-										<div class="clearfix"></div>
-										<h3 style="color:#44b6ae"><span>Office Management Online Training Course</span></h3>
+										<h4 style="color:#44b6ae"><span>Office Management Online Training  ...... </span></h4>
 										<div class="clearfix"></div>
 										<h5>
 											<span>
@@ -362,6 +338,7 @@ License: You must have a valid license purchased only from themeforest(the above
 									</div>
 									
 									<div class="col-md-4 pull-left">
+										<h5 class="pull-right">SAT, APR 11 12:00 PM</h5>
 										<div class="clearfix"></div>
 										<span><img src="assets\frontend\pages\img\careers\careers.jpg" style="width:100%;"></img></span>
 									</div>
@@ -369,17 +346,17 @@ License: You must have a valid license purchased only from themeforest(the above
 								</div>
 												
 							</div>
-							<hr/>
-							<div class="row" style="font-size:15px">
-								<div class="col-md-3 text-center" >
+							<hr style="margin:10px 0"/>
+							<div class="row" style="font-size:12px">
+								<div class="col-sm-3 text-center" >
 									<!-- <a data-toggle="modal" href=".large">
 									<span><i class="fa fa-edit"></i>Edit </a> -->
-									<a href="#"> <span><i class="fa fa-edit"></i>Edit</span> </a>
+									<a href="EditEvent.html"> <span><i class="fa fa-edit"></i>Edit</span> </a>
 								</div>
-								<div class="col-md-3 text-center">
+								<div class="col-sm-3 text-center">
 									<a href="#"><span><i class="fa fa-eye"></i> View</span></a>
 								</div>
-								<div class="col-md-6 text-center">
+								<div class="col-sm-6 text-center">
 									<span><i class="fa fa-group"></i> Registered 80 of 100</span>
 								</div>
 							</div>
@@ -390,20 +367,20 @@ License: You must have a valid license purchased only from themeforest(the above
 				<div class="col-md-6 col-sm-6">
 					<div class="portlet box red-sunglo">
 						<div class="portlet-title">
-							<div class="caption">
-								<i class="fa fa-calendar"></i>Event
+							<div class="caption" style="padding:0 0;">
+								<h4><i class="fa fa-calendar"></i> Event</h4>
 							</div>
-							<div class="actions">
+							<div class="actions" style="padding:0 0;">
 								<h4>Draft</h4>
 							</div>
 						</div>
 						<div class="portlet-body">
 							<div class="row">
 								<div class="col-md-12">
-									<h4 class="pull-right">SAT, DEC 11 10:00 PM</h4>
+									
 									<div class="col-md-8">
-										<div class="clearfix"></div>
-										<h3 style="color:#44b6ae"><span>Certified Digital  Marketing  Program </span></h3>
+										
+										<h4 style="color:#44b6ae"><span>Certified Digital  Marketing  Program </span></h4>
 										<div class="clearfix"></div>
 										<h5>
 											<span>
@@ -413,24 +390,24 @@ License: You must have a valid license purchased only from themeforest(the above
 									</div>
 									
 									<div class="col-md-4 pull-left">
-										<div class="clearfix"></div>
+										<h5 class="pull-right">SAT, DEC 11 10:00 PM</h5>
 										<span><img src="assets\frontend\pages\img\careers\careers.jpg" style="width:100%;"></img></span>
 									</div>
 									
 								</div>
 												
 							</div>
-							<hr/>
-							<div class="row" style="font-size:15px">
-								<div class="col-md-3 text-center" >
+							<hr style="margin:10px 0"/>
+							<div class="row" style="font-size:12px">
+								<div class="col-sm-3 text-center" >
 									<!-- <a data-toggle="modal" href=".large">
 									<span><i class="fa fa-edit"></i>Edit </a> -->
-									<a href="#"> <span><i class="fa fa-edit"></i>Edit</span> </a>
+									<a href="EditEvent.html"> <span><i class="fa fa-edit"></i>Edit</span> </a>
 								</div>
-								<div class="col-md-3 text-center">
+								<div class="col-sm-3 text-center">
 									<a href="#"><span><i class="fa fa-eye"></i> View</span></a>
 								</div>
-								<div class="col-md-6 text-center">
+								<div class="col-sm-6 text-center">
 									<span><i class="fa fa-group"></i> Registered 60 of 100</span>
 								</div>
 							</div>
@@ -446,21 +423,21 @@ License: You must have a valid license purchased only from themeforest(the above
 				<div class="col-md-6 col-sm-6">
 					<div class="portlet box blue-steel">
 						<div class="portlet-title">
-							<div class="caption">
-								<i class="fa fa-calendar"></i>Event
+							<div class="caption" style="padding:0 0;">
+								<h4><i class="fa fa-calendar"></i> Event</h4>
 							</div>
-							<div class="actions">
+							<div class="actions" style="padding:0 0;">
 								<h4>Live</h4>
 							</div>
 						</div>
 						<div class="portlet-body">
 							<div class="row">
 								<div class="col-md-12">
-									<h4 class="pull-right">SAT, JAN 11 12:00 PM</h4>
-									<div class="clearfix"></div>
+									
+									
 									<div class="col-md-8">
 										
-										<h3 style="color:#44b6ae"><span>Technology & Marketing Connect 2015</span></h3>
+										<h4 style="color:#44b6ae"><span>Technology & Marketing Connect 2015</span></h4>
 										<div class="clearfix"></div>
 										<h5>
 											<span>
@@ -470,24 +447,24 @@ License: You must have a valid license purchased only from themeforest(the above
 									</div>
 									
 									<div class="col-md-4 pull-left">
-										<div class="clearfix"></div>
+										<h5 class="pull-right">SAT, JAN 11 12:00 PM</h5>
 										<span><img src="assets\frontend\pages\img\careers\careers.jpg" style="width:100%;"></img></span>
 									</div>
 									
 								</div>
 												
 							</div>
-							<hr/>
-							<div class="row" style="font-size:15px">
-								<div class="col-md-3 text-center" >
+							<hr style="margin:10px 0"/>
+							<div class="row" style="font-size:12px">
+								<div class="col-sm-3 text-center" >
 									<!-- <a data-toggle="modal" href=".large">
 									<span><i class="fa fa-edit"></i>Edit </a> -->
-									<a href="#"> <span><i class="fa fa-edit"></i>Edit</span> </a>
+									<a href="EditEvent.html"> <span><i class="fa fa-edit"></i>Edit</span> </a>
 								</div>
-								<div class="col-md-3 text-center">
+								<div class="col-sm-3 text-center">
 									<a href="#"><span><i class="fa fa-eye"></i> View</span></a>
 								</div>
-								<div class="col-md-6 text-center">
+								<div class="col-sm-6 text-center">
 									<span><i class="fa fa-group"></i> Registered 80 of 100</span>
 								</div>
 							</div>
@@ -497,21 +474,21 @@ License: You must have a valid license purchased only from themeforest(the above
 				</div>
 				<div class="col-md-6 col-sm-6">
 					<div class="portlet box green-haze">
-						<div class="portlet-title">
-							<div class="caption">
-								<i class="fa fa-calendar"></i>Event
+						<div class="portlet-title" >
+							<div class="caption" style="padding:0 0;">
+								<h4><i class="fa fa-calendar"></i> Event</h4>
 							</div>
-							<div class="actions">
+							<div class="actions" style="padding:0 0;">
 								<h4>Draft</h4>
 							</div>
 						</div>
 						<div class="portlet-body">
 							<div class="row">
 								<div class="col-md-12">
-									<h4 class="pull-right">SAT, MAY 11 10:00 PM</h4>
+									
 									<div class="col-md-8">
-										<div class="clearfix"></div>
-										<h3 style="color:#44b6ae"><span>Startup Networking Session </span></h3>
+										
+										<h4 style="color:#44b6ae"><span>Startup Networking Session </span></h4>
 										<div class="clearfix"></div>
 										<h5>
 											<span>
@@ -521,54 +498,30 @@ License: You must have a valid license purchased only from themeforest(the above
 									</div>
 									
 									<div class="col-md-4 pull-left">
-										<div class="clearfix"></div>
+										<h5 class="pull-right">SAT, MAY 11 10:00 PM</h5>
 										<span><img src="assets\frontend\pages\img\careers\careers.jpg" style="width:100%;"></img></span>
 									</div>
 									
 								</div>
 												
 							</div>
-							<hr/>
-							<div class="row" style="font-size:15px">
-								<div class="col-md-3 text-center" >
+							<hr style="margin:10px 0"/>
+							<div class="row" style="font-size:12px">
+								<div class="col-sm-3 text-center" >
 									
 									<!-- <a data-toggle="modal" href=".large">
 									<span><i class="fa fa-edit"></i>Edit </a> -->
-									<a href="#"> <span><i class="fa fa-edit"></i>Edit</span> </a>
+									<a href="EditEvent.html"> <span><i class="fa fa-edit"></i>Edit</span> </a>
 								</div>
-								<div class="col-md-3 text-center">
+								<div class="col-sm-3 text-center">
 									<a href="#"><span><i class="fa fa-eye"></i> View</span></a>
 								</div>
-								<div class="col-md-6 text-center">
+								<div class="col-sm-6 text-center">
 									<span ><i class="fa fa-group"></i> Registered 60 of 100</span>
 								</div>
 							</div>
 						
-							<!-- Begin Modal Popups -->
 							
-							<div class="modal fade bs-modal-lg large"  tabindex="-1" role="dialog" aria-hidden="true">
-								<div class="modal-dialog modal-lg">
-									<div class="modal-content">
-										<div class="modal-header">
-											<button type="button" class="close" data-dismiss="modal" aria-hidden="true"></button>
-											<h4 class="modal-title">Modal Title</h4>
-										</div>
-										<div class="modal-body">
-											 Modal body goes here
-										</div>
-										<div class="modal-footer">
-											<button type="button" class="btn default" data-dismiss="modal">Close</button>
-											<button type="button" class="btn blue">Save changes</button>
-										</div>
-									</div>
-									<!-- /.modal-content -->
-								</div>
-								<!-- /.modal-dialog -->
-							</div>
-
-
-							
-							<!-- End Modal Popups -->
 							
 						</div>
 					</div>
