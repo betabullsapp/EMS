@@ -49,6 +49,9 @@ License: You must have a valid license purchased only from themeforest(the above
 <link href="assets/admin/layout/css/themes/darkblue.css" rel="stylesheet" type="text/css" id="style_color"/>
 <link href="assets/admin/layout/css/custom.css" rel="stylesheet" type="text/css"/>
 <!-- END THEME STYLES -->
+
+<link href="assets\global\css\jquery.fileupload.css" rel="stylesheet" type="text/css"/>
+
 <link rel="shortcut icon" href="favicon.ico"/>
 <style>
 	.cir{
@@ -109,12 +112,12 @@ License: You must have a valid license purchased only from themeforest(the above
 					</a>
 					<ul class="dropdown-menu dropdown-menu-default">
 						<li>
-							<a href="extra_profile.html">
+							<a href="myprofile.html">
 							<i class="icon-user"></i> My Profile </a>
 						</li>
 						<li>
-							<a href="page_calendar.html">
-							<i class="icon-settings"></i> Settings </a>
+							<a href="settings.html">
+							<i class="icon-diamond"></i> Settings </a>
 						</li>
 						
 						<li>
@@ -198,7 +201,7 @@ License: You must have a valid license purchased only from themeforest(the above
 				</li>
 				
 				<li class="start active open">
-					<a href="MyProfile.html">
+					<a href="myprofile.html">
 					<i class="icon-rocket"></i>
 					<span class="title">MyProfile</span>
 					<span class="selected"></span>
@@ -240,7 +243,7 @@ License: You must have a valid license purchased only from themeforest(the above
 						<i class="fa fa-angle-right"></i>
 					</li>
 					<li>
-						<a href="#">MyProfile</a>
+						<a href="myprofile.html">MyProfile</a>
 					</li>
 				</ul>
 				<!--div class="page-toolbar">
@@ -251,18 +254,20 @@ License: You must have a valid license purchased only from themeforest(the above
 			</div>
 			<!--h2>Account Information</h2><hr/-->
 			<div class="row margin-top-20">
-				<div class="col-md-12">
-					<!-- BEGIN PROFILE SIDEBAR -->
-					<div class="profile-sidebar">
-						<!-- PORTLET MAIN -->
+				<div class="col-md-1"></div>
+				<div class="col-md-8">
+				<div class="row">
+				<!--	BEGIN PROFILE SIDEBAR--> 
+					<!--div class="profile-sidebar">
+						<!-- PORTLET MAIN >
 						
 						<div class="form-group">
 				
-							<!--div action="#" class="form-horizontal pull-left portlet light profile-sidebar-portlet"-->
+							<!--div action="#" class="form-horizontal pull-left portlet light profile-sidebar-portlet"
 							<div class="portlet light profile-sidebar-portlet">
-								<!-- SIDEBAR USERPIC -->
+								<!-- SIDEBAR USERPIC >
 								<div class="profile-userpic">
-									<img src="assets/admin/pages/media/profile/profile_user.jpg" class="img-responsive useriamge cir" alt="">
+								<img src="assets/admin/pages/media/profile/profile_user.jpg" class="img-responsive useriamge cir" alt="">
 								</div>
 								<br>
 								<center>
@@ -270,49 +275,32 @@ License: You must have a valid license purchased only from themeforest(the above
 										<input type="file" onchange="CopyMe(this, 'txtFileName');" id="profile_image" class="file fileinput-new">Change your picture
 									</span>
 								</center>
-								<!--/div-->
+								<!--/div>
         
 							</div>
 				
-						</div>
-						<!-- END PORTLET MAIN -->
+						</div></div-->
+						<!-- END PORTLET MAIN 
 						<!-- PORTLET MAIN -->
 						
-						<!-- END PORTLET MAIN -->
+						<!-- END PORTLET MAIN 
 					</div>
 					<!-- END BEGIN PROFILE SIDEBAR -->
 					<!-- BEGIN PROFILE CONTENT -->
+					<div class="row">
 					<div class="profile-content">
 						<div class="row">
-							<div class="col-md-12">
+							<div class="col-md-10">
 								<div class="portlet light">
-									<div class="portlet-title tabbable-line">
-										<div class="caption caption-md">
-											<i class="icon-globe theme-font hide"></i>
-											<span class="caption-subject font-blue-madison bold uppercase">Account Information</span>
-										</div>
-										<!--ul class="nav nav-tabs">
-											<li class="active">
-												<a href="#tab_1_1" data-toggle="tab">Personal Info</a>
-											</li>
-											<li>
-												<a href="#tab_1_2" data-toggle="tab">Change Avatar</a>
-											</li>
-											<li>
-												<a href="#tab_1_3" data-toggle="tab">Change Password</a>
-											</li>
-											<li>
-												<a href="#tab_1_4" data-toggle="tab">Privacy Settings</a>
-											</li>
-										</ul-->
-									</div>
+									
 									<div class="portlet-body">
 									  <form role="form" action="#">
 										<div class="tab-content">
 											<!-- PERSONAL INFO TAB -->
-											<div class="tab-pane active" id="tab_1_1">
+											<div class="tab-pane active" id="tab_1_1">																			
 												
-												<div class="col-md-6">
+												<div class="col-md-6">		
+																								
 													<div class="form-group">
 														<label class="control-label">First Name</label>
 														<input type="text" placeholder="John" class="form-control">
@@ -334,15 +322,17 @@ License: You must have a valid license purchased only from themeforest(the above
 														<input type="text" placeholder="9865848958" class="form-control">
 													</div>
 													<div class="form-group">
-														<label class="control-label">Address 1</label>
-														<textarea class="form-control" rows="3" placeholder=""></textarea>
+														<label class="control-label">Address Line 1</label>
+														<input type="text" placeholder="" class="form-control">
+														
 													</div>
 												</div>
 												
 												<div class="col-md-6">
 													<div class="form-group">
-														<label class="control-label">Address 2</label>
-														<textarea rows="3" placeholder="" class="form-control"></textarea>
+														<label class="control-label">Address Line 2</label>
+														<input type="text" placeholder="" class="form-control">
+														<!--textarea rows="3" placeholder="" class="form-control"></textarea-->
 													</div>
 													<div class="form-group">
 														<label class="control-label">City</label>
@@ -360,17 +350,66 @@ License: You must have a valid license purchased only from themeforest(the above
 														<label class="control-label">Zip/Postal Code</label>
 														<input type="text" placeholder="54445" class="form-control">
 													</div>
+													
+													 
+														<label class="col-md-8 control-label"></label>
+														<!--div class="col-md-12"-->
+															<div class="form-group" style="margin-top: 42px; margin-bottom: -21%;">
+															
+															<input type="text" class="" id="tbx-file-path" value="No file chosen..." readonly="readonly" />
+															<span class="btn btn-success fileinput-button">
+																<span>Browse...</span>
+																<input type="file" onchange="CopyMe(this, 'tbx-file-path');" id="fu-my-simple-upload" class="file ">
+															</span>
+														</div>
+													  <!--/div-->
+													<br><br/><br/><br/>
+													
+													
+													
+													
+													
+													
+													<!--div class="form-group">
+													<label class="control-label col-md-2">Event Logo</label>
+										                 <div class="col-md-9">
+											                  <div class="fileinput fileinput-new" data-provides="fileinput">
+												                <div class="fileinput-new thumbnail" style="width: 100px; height: 80px;">
+													              <img src="http://www.placehold.it/200x150/EFEFEF/AAAAAA&amp;text=no+image" alt=""/>
+												                </div>
+												                <div class="fileinput-preview fileinput-exists thumbnail" style="max-width: 100px; max-height: 80px;">
+												                </div>
+												                 <div>
+													                  <span class="btn default btn-file">
+													                   <span class="fileinput-new">
+													                       Select image </span>
+													                   <span class="fileinput-exists">
+													                         Change </span>
+													                   <input type="file" name="...">
+													                  </span>
+													               <a href="#" class="btn red fileinput-exists" data-dismiss="fileinput">
+													                 Remove </a>
+												                </div>
+											               </div>
+											
+										                </div>
+													</div-->
+													
+													
+													
+													
+													
 												</div>
 													
-												<div class="form-actions">
+												<center><div class="form-actions">
 													<div class="row">
-														<div class="col-md-offset-3 col-md-9">
-															<button type="submit" class="btn purple"><i class="fa fa-check"></i> Update</button>
+														<div class="col-md-offset-3 col-md-9" style="margin-top: 39px;">
+															<button type="submit" class="btn blue"><i class="fa fa-check"></i> Update</button>
 															<button type="button" class="btn default">Cancel</button>
 														</div>
 													</div>
 												</div>
-													
+													</center>
 													
 												
 											</div>
@@ -385,7 +424,7 @@ License: You must have a valid license purchased only from themeforest(the above
 					<!-- END PROFILE CONTENT -->
 				</div>
 			</div> 
-			
+			                         </div>
 			<!--div class="portlet-body form">
 							<form class="form-horizontal" role="form">
 								<div class="form-body">
@@ -412,16 +451,7 @@ License: You must have a valid license purchased only from themeforest(the above
 		</div>
 	</div>
 <!-- END CONTAINER -->
-<!-- BEGIN FOOTER -->
-<div class="page-footer">
-	<div class="page-footer-inner">
-		 2014 &copy; Metronic by keenthemes.
-	</div>
-	<div class="scroll-to-top">
-		<i class="icon-arrow-up"></i>
-	</div>
-</div>
-<!-- END FOOTER -->
+
 <!-- BEGIN JAVASCRIPTS(Load javascripts at bottom, this will reduce page load time) -->
 <!-- BEGIN CORE PLUGINS -->
 <!--[if lt IE 9]>
@@ -501,6 +531,28 @@ jQuery(document).ready(function() {
         });
     });
 	</script>
+<script>
+	  function CopyMe(oFileInput, sTargetID) {
+        var arrTemp = oFileInput.value.split('\\');
+        document.getElementById(sTargetID).value = arrTemp[arrTemp.length - 1];
+    }
+    
+    $("#fu-my-simple-upload").on('change', function () {
+        $("#tbx-file-path").val(this.files[0].name);
+    });
+
+
+    $("input[type='radio']").change(function () {
+
+        if ($(this).val() == "other") {
+            $("#othertext").show();
+        }
+        else {
+            $("#othertext").hide();
+        }
+
+    });
+</script>	
 <!-- END JAVASCRIPTS -->
 </body>
 <!-- END BODY -->
