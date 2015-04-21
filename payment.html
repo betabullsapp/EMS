@@ -48,6 +48,11 @@ License: You must have a valid license purchased only from themeforest(the above
 <link href="assets/admin/layout/css/custom.css" rel="stylesheet" type="text/css"/>
 <!-- END THEME STYLES -->
 <link rel="shortcut icon" href="favicon.ico"/>
+<style>
+.page-content {
+min-height:800px !important;
+}
+</style>
 </head>
 <!-- END HEAD -->
 <!-- BEGIN BODY -->
@@ -80,23 +85,12 @@ License: You must have a valid license purchased only from themeforest(the above
 		</a>
 		<!-- END RESPONSIVE MENU TOGGLER -->
 		<!-- BEGIN TOP NAVIGATION MENU -->
-		<div class="top-menu">
+		<!--<div class="top-menu">
 			<ul class="nav navbar-nav pull-right">
 				<!-- BEGIN NOTIFICATION DROPDOWN -->
 				<!-- DOC: Apply "dropdown-dark" class after below "dropdown-extended" to change the dropdown styte -->
 				
-				<!-- END NOTIFICATION DROPDOWN -->
-				<!-- BEGIN INBOX DROPDOWN -->
-				<!-- DOC: Apply "dropdown-dark" class after below "dropdown-extended" to change the dropdown styte -->
-				
-				<!-- END INBOX DROPDOWN -->
-				<!-- BEGIN TODO DROPDOWN -->
-				<!-- DOC: Apply "dropdown-dark" class after below "dropdown-extended" to change the dropdown styte -->
-				
-				<!-- END TODO DROPDOWN -->
-				<!-- BEGIN USER LOGIN DROPDOWN -->
-				<!-- DOC: Apply "dropdown-dark" class after below "dropdown-extended" to change the dropdown styte -->
-				<li class="dropdown dropdown-user">
+			<!--	<li class="dropdown dropdown-user">
 					<a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-close-others="true">
 					<img alt="" class="img-circle" src="assets/admin/layout/img/avatar3_small.jpg"/>
 					<span class="username username-hide-on-mobile">
@@ -105,41 +99,34 @@ License: You must have a valid license purchased only from themeforest(the above
 					</a>
 					<ul class="dropdown-menu dropdown-menu-default">
 						<li>
-							<a href="myprofile.html">
+							<a href="MyProfile.html">
 							<i class="icon-user"></i> My Profile </a>
 						</li>
-						<li>
-							<a href="settings.html">
-							<i class="icon-diamond"></i> Settings 
-							</a>
-						</li>
 						
+						<li>
+							<a href="extra_lock.html">
+							<i class="icon-diamond"></i> Setting </a>
+						</li>
 						<li>
 							<a href="login.html">
 							<i class="icon-key"></i> Log Out </a>
 						</li>
 					</ul>
 				</li>
-				<!-- END USER LOGIN DROPDOWN -->
-				<!-- BEGIN QUICK SIDEBAR TOGGLER -->
-				<!-- DOC: Apply "dropdown-dark" class after below "dropdown-extended" to change the dropdown styte -->
-				<li class="dropdown dropdown-quick-sidebar-toggler">
-					
-				</li>
-				<!-- END QUICK SIDEBAR TOGGLER -->
+				
 			</ul>
 		</div>
 		<!-- END TOP NAVIGATION MENU -->
-	</div>
+</div>
 	<!-- END HEADER INNER -->
 </div>
 <!-- END HEADER -->
-<div class="clearfix">
+<!--<div class="clearfix">
 </div>
 <!-- BEGIN CONTAINER -->
 <div class="page-container">
 	<!-- BEGIN SIDEBAR -->
-	<div class="page-sidebar-wrapper">
+<!--	<div class="page-sidebar-wrapper">
 		<div class="page-sidebar navbar-collapse collapse">
 			<!-- BEGIN SIDEBAR MENU -->
 			<!-- DOC: Apply "page-sidebar-menu-light" class right after "page-sidebar-menu" to enable light sidebar menu style(without borders) -->
@@ -148,27 +135,32 @@ License: You must have a valid license purchased only from themeforest(the above
 			<!-- DOC: Set data-auto-scroll="false" to disable the sidebar from auto scrolling/focusing -->
 			<!-- DOC: Set data-keep-expand="true" to keep the submenues expanded -->
 			<!-- DOC: Set data-auto-speed="200" to adjust the sub menu slide up/down speed -->
-			<ul class="page-sidebar-menu" data-keep-expanded="false" data-auto-scroll="true" data-slide-speed="200">
+			<!--<ul class="page-sidebar-menu" data-keep-expanded="false" data-auto-scroll="true" data-slide-speed="200">
 				<!-- DOC: To remove the sidebar toggler from the sidebar you just need to completely remove the below "sidebar-toggler-wrapper" LI element -->
-				<li class="sidebar-toggler-wrapper">
+			<!--	<li class="sidebar-toggler-wrapper">
 					<!-- BEGIN SIDEBAR TOGGLER BUTTON -->
-					<div class="sidebar-toggler">
+					<!--<div class="sidebar-toggler">
 					</div>
 					<!-- END SIDEBAR TOGGLER BUTTON -->
-				</li>
+				<!--</li>
 				<!-- DOC: To remove the search box from the sidebar you just need to completely remove the below "sidebar-search-wrapper" LI element -->
-				<li class="sidebar-search-wrapper">
+				<!--<li class="sidebar-search-wrapper">
 					<!-- BEGIN RESPONSIVE QUICK SEARCH FORM -->
 					<!-- DOC: Apply "sidebar-search-bordered" class the below search form to have bordered search box -->
 					<!-- DOC: Apply "sidebar-search-bordered sidebar-search-solid" class the below search form to have bordered & solid search box -->
-					<form class="sidebar-search " action="extra_search.html" method="POST">
+					<!--<form class="sidebar-search " action="extra_search.html" method="POST">
 						<a href="javascript:;" class="remove">
 						<i class="icon-close"></i>
 						</a>
-						
-					</form>
+						<!--div class="input-group">
+							<input type="text" class="form-control" placeholder="Search...">
+							<span class="input-group-btn">
+							<a href="javascript:;" class="btn submit"><i class="icon-magnifier"></i></a>
+							</span>
+						</div-->
+					<!--</form>
 					<!-- END RESPONSIVE QUICK SEARCH FORM -->
-				</li>
+				<!--</li>
 				<li class="start active open">
 					<a href="dashboard.html">
 					<i class="icon-home"></i>
@@ -179,7 +171,7 @@ License: You must have a valid license purchased only from themeforest(the above
 					
 				</li>
 				<li>
-					<a href="createevent.html">
+					<a href="CreatEevent.html">
 					<i class="icon-basket"></i>
 					<span class="title">Create New Event</span>
 					<span class="arrow "></span>
@@ -188,7 +180,7 @@ License: You must have a valid license purchased only from themeforest(the above
 				</li>
 				
 				<li>
-					<a href="myprofile.html">
+					<a href="MyProfile.html">
 					<i class="icon-rocket"></i>
 					<span class="title">My Profile</span>
 					<span class="arrow "></span>
@@ -216,32 +208,27 @@ License: You must have a valid license purchased only from themeforest(the above
 		</div>
 	</div>
 	<!-- END SIDEBAR -->
-	<div class="page-content-wrapper">
-		<div class="page-content" style="min-height:1028px">
-			
+	<!--<div class="page-content-wrapper">-->
+		<div class="page-content" >
 			<!-- BEGIN PAGE HEADER-->
-			<h3 class="page-title">
-			Share Event
-			</h3>
+			
 			<div class="page-bar">
-				<ul class="page-breadcrumb">
+				<!--<ul class="page-breadcrumb">
 					<li>
 						<i class="fa fa-home"></i>
-						<a href="dashboard.html">Home</a>
+						<a href="index.html">Home</a>
 						<i class="fa fa-angle-right"></i>
 					</li>
 					<li>
-						<a href="dashboard.html">Dashboard</a>
+						<a href="#">Dashboard</a>
 						<i class="fa fa-angle-right"></i>
 					</li>
 					<li>
-						
-						<a href="view.html">Event</a>
+						<a href="#">Event</a>
 						<i class="fa fa-angle-right"></i>
 					</li>
 					<li>
-						<a href="ShareEvent.html">Share</a>
-						
+						<a href="#">Registration</a>
 					</li>
 				</ul>
 				<!--div class="page-toolbar">
@@ -250,40 +237,37 @@ License: You must have a valid license purchased only from themeforest(the above
 					</div>
 				</div-->
 			</div>
-			<!-- BEGIN SAMPLE PORTLET CONFIGURATION MODAL FORM-->
-			 <div class="col-md-3"></div>
-		  <div class="col-md-6">
-           <div class="portlet blue-hoki box">
-                <div class="portlet-title">
-                    <div class="caption">
-                      Share This Event
-                     </div>
-                </div>
-                    <div class="portlet-body">
-                       <div id="tree_1" class="tree-demo">
-					          <div class="from-group">
-							   <div class="row">
-							   <div class="col-md-1"></div>
-							   <div class="col-md-8"><center>
-					           <a href="https://www.facebook.com"><button class='btn btn-primary' style="background:#297ACC;" ><i class="fa fa-facebook"></i>|facebook</button></a>
-                               <a href="https://www.linkedin.com"><button class='btn btn-primary' style="background:#2E8AE6;" href=''><i class="fa fa-linkedin"></i>|linkedin</button>
-							   <a href="https://www.share.com"><button class='btn btn-primary ' style="background:#297ACC;" href=''><i class="fa fa-share"></i>|Share</button></a></center>
-							   </div>
-							  </div>
-							  </div>
-				          </div>
-                       <div>
-                    </div>
-           </div>
-     
-		 </div>	
+			<div class="col-md-4"></div>
+			
+			<div class="col-md-4">
+			<div class="portlet blue-hoki box" style="margin-top:45px;">
+				    <div class="portlet-title">
+						  <div class="caption">
+								PayPal
+						  </div>
+				   </div>
+					<div class="portlet-body">
+							<div id="tree_1" class="tree-demo">
+								<div>
+										<center><a href="https://www.paypal.com/signin/?country.x=IN&locale.x=en_IN"><img src="assets/images/paypal.png" ></a></center>
+								        
+								 </div>
+							</div>
+					</div>
+			</div>
+
+
+			</div>
+			<div class="col-md-4"></div>
+					
+		</div>
 	</div>
 </div>
 <!-- END CONTAINER -->
 <!-- BEGIN FOOTER -->
 <div class="page-footer">
 	<div class="page-footer-inner">
-		
+		 
 	</div>
 	<div class="scroll-to-top">
 		<i class="icon-arrow-up"></i>
