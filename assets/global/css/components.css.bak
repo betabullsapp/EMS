@@ -4905,7 +4905,7 @@ Custom tables
   background-color: #67809F;
   font-size: 14px;
   font-weight: 400;
-  color: #FFFFFF;
+  color: #666;
 }
 
 .table-advance div.success,
