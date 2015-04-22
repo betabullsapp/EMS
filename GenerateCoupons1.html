@@ -30,11 +30,23 @@ License: You must have a valid license purchased only from themeforest(the above
 <link href="assets/global/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
 <link href="assets/global/plugins/uniform/css/uniform.default.css" rel="stylesheet" type="text/css"/>
 <link href="assets/global/plugins/bootstrap-switch/css/bootstrap-switch.min.css" rel="stylesheet" type="text/css"/>
+<link rel="stylesheet" type="text/css" href="assets/global/plugins/bootstrap-fileinput/bootstrap-fileinput.css"/>
+<link rel="stylesheet" type="text/css" href="assets/global/plugins/bootstrap-switch/css/bootstrap-switch.min.css"/>
+<link rel="stylesheet" type="text/css" href="assets/global/plugins/jquery-tags-input/jquery.tagsinput.css"/>
+<link rel="stylesheet" type="text/css" href="assets/global/plugins/bootstrap-markdown/css/bootstrap-markdown.min.css">
+<link rel="stylesheet" type="text/css" href="assets/global/plugins/typeahead/typeahead.css">
+<link rel="stylesheet" type="text/css" href="assets/global/plugins/clockface/css/clockface.css"/>
+<link rel="stylesheet" type="text/css" href="assets/global/plugins/bootstrap-datepicker/css/datepicker3.css"/>
+<link rel="stylesheet" type="text/css" href="assets/global/plugins/bootstrap-timepicker/css/bootstrap-timepicker.min.css"/>
+<link rel="stylesheet" type="text/css" href="assets/global/plugins/bootstrap-colorpicker/css/colorpicker.css"/>
+<link rel="stylesheet" type="text/css" href="assets/global/plugins/bootstrap-daterangepicker/daterangepicker-bs3.css"/>
+<link rel="stylesheet" type="text/css" href="assets/global/plugins/bootstrap-datetimepicker/css/bootstrap-datetimepicker.min.css"/>
 <!-- END GLOBAL MANDATORY STYLES -->
 <!-- BEGIN PAGE LEVEL PLUGIN STYLES -->
 <link href="assets/global/plugins/bootstrap-daterangepicker/daterangepicker-bs3.css" rel="stylesheet" type="text/css"/>
 <link href="assets/global/plugins/fullcalendar/fullcalendar.min.css" rel="stylesheet" type="text/css"/>
 <link href="assets/global/plugins/jqvmap/jqvmap/jqvmap.css" rel="stylesheet" type="text/css"/>
+
 <!-- END PAGE LEVEL PLUGIN STYLES -->
 <!-- BEGIN PAGE STYLES -->
 <link href="assets/admin/pages/css/tasks.css" rel="stylesheet" type="text/css"/>
@@ -48,11 +60,6 @@ License: You must have a valid license purchased only from themeforest(the above
 <link href="assets/admin/layout/css/custom.css" rel="stylesheet" type="text/css"/>
 <!-- END THEME STYLES -->
 <link rel="shortcut icon" href="favicon.ico"/>
-<style>
-.page-content{
-height:1500px!important;
-}
-</style>
 </head>
 <!-- END HEAD -->
 <!-- BEGIN BODY -->
@@ -85,9 +92,23 @@ height:1500px!important;
 		</a>
 		<!-- END RESPONSIVE MENU TOGGLER -->
 		<!-- BEGIN TOP NAVIGATION MENU -->
-		<!--<div class="top-menu">
+		<div class="top-menu">
 			<ul class="nav navbar-nav pull-right">
+				<!-- BEGIN NOTIFICATION DROPDOWN -->
+				<!-- DOC: Apply "dropdown-dark" class after below "dropdown-extended" to change the dropdown styte -->
 				
+				<!-- END NOTIFICATION DROPDOWN -->
+				<!-- BEGIN INBOX DROPDOWN -->
+				<!-- DOC: Apply "dropdown-dark" class after below "dropdown-extended" to change the dropdown styte -->
+				
+				<!-- END INBOX DROPDOWN -->
+				<!-- BEGIN TODO DROPDOWN -->
+				<!-- DOC: Apply "dropdown-dark" class after below "dropdown-extended" to change the dropdown styte -->
+				
+				
+				<!-- END TODO DROPDOWN -->
+				<!-- BEGIN USER LOGIN DROPDOWN -->
+				<!-- DOC: Apply "dropdown-dark" class after below "dropdown-extended" to change the dropdown styte -->
 				<li class="dropdown dropdown-user">
 					<a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-close-others="true">
 					<img alt="" class="img-circle" src="assets/admin/layout/img/avatar3_small.jpg"/>
@@ -102,8 +123,10 @@ height:1500px!important;
 						</li>
 						<li>
 							<a href="settings.html">
-							<i class="icon-diamond"></i>Settings</a>
+							<i class="icon-diamond"></i> Settings 
+							</a>
 						</li>
+						
 						<li>
 							<a href="login.html">
 							<i class="icon-key"></i> Log Out </a>
@@ -113,14 +136,12 @@ height:1500px!important;
 				<!-- END USER LOGIN DROPDOWN -->
 				<!-- BEGIN QUICK SIDEBAR TOGGLER -->
 				<!-- DOC: Apply "dropdown-dark" class after below "dropdown-extended" to change the dropdown styte -->
-				<!--<li class="dropdown dropdown-quick-sidebar-toggler">
-					<a href="javascript:;" class="dropdown-toggle">
-					<i class="icon-logout"></i>
-					</a>
+				<li class="dropdown dropdown-quick-sidebar-toggler">
+					
 				</li>
 				<!-- END QUICK SIDEBAR TOGGLER -->
-			<!--</ul>
-		<!--</div> -->
+			</ul>
+		</div>
 		<!-- END TOP NAVIGATION MENU -->
 	</div>
 	<!-- END HEADER INNER -->
@@ -131,7 +152,7 @@ height:1500px!important;
 <!-- BEGIN CONTAINER -->
 <div class="page-container">
 	<!-- BEGIN SIDEBAR -->
-<!--	<div class="page-sidebar-wrapper">
+	<div class="page-sidebar-wrapper">
 		<div class="page-sidebar navbar-collapse collapse">
 			<!-- BEGIN SIDEBAR MENU -->
 			<!-- DOC: Apply "page-sidebar-menu-light" class right after "page-sidebar-menu" to enable light sidebar menu style(without borders) -->
@@ -140,14 +161,14 @@ height:1500px!important;
 			<!-- DOC: Set data-auto-scroll="false" to disable the sidebar from auto scrolling/focusing -->
 			<!-- DOC: Set data-keep-expand="true" to keep the submenues expanded -->
 			<!-- DOC: Set data-auto-speed="200" to adjust the sub menu slide up/down speed -->
-			<!--<ul class="page-sidebar-menu" data-keep-expanded="false" data-auto-scroll="true" data-slide-speed="200">
+			<ul class="page-sidebar-menu" data-keep-expanded="false" data-auto-scroll="true" data-slide-speed="200">
 				<!-- DOC: To remove the sidebar toggler from the sidebar you just need to completely remove the below "sidebar-toggler-wrapper" LI element -->
-				<!--<li class="sidebar-toggler-wrapper">
+				<li class="sidebar-toggler-wrapper">
 					<!-- BEGIN SIDEBAR TOGGLER BUTTON -->
-					<!--<div class="sidebar-toggler">
+					<div class="sidebar-toggler">
 					</div>
 					<!-- END SIDEBAR TOGGLER BUTTON -->
-			<!--	</li>
+				</li>
 				<!-- DOC: To remove the search box from the sidebar you just need to completely remove the below "sidebar-search-wrapper" LI element -->
 			<!--	<li class="sidebar-search-wrapper">
 					<!-- BEGIN RESPONSIVE QUICK SEARCH FORM 
@@ -165,12 +186,12 @@ height:1500px!important;
 						</div>
 					</form>-->
 					<!-- END RESPONSIVE QUICK SEARCH FORM -->
-				<!--</li>-->
-			<!--	<li class="start active open">
+				</li>-->
+				<li>
 					<a href="dashboard.html">
 					<i class="icon-home"></i>
 					<span class="title">Dashboard</span>
-					<span class="selected"></span>
+					
 					<span class="arrow open"></span>
 					</a>
 					
@@ -200,208 +221,151 @@ height:1500px!important;
 					</a>
 					
 				</li>
-				<li>
-					<a href="Generate Coupons.html">
+				<li class="start active open">
+					<a href="GenerateCoupons.html">
 					<i class="icon-puzzle"></i>
 					<span class="title">Generate Coupons</span>
+					<span class="selected"></span>
 					<span class="arrow "></span>
 					</a>
 					
 				</li>
 				
 			<!-- END SIDEBAR MENU -->
-	<!--	</div>
-	<!--</div>
-	<!-- END SIDEBAR -->
-	<!--<div class="page-content-wrapper">-->
-		<div class="page-content">
-			<!-- BEGIN SAMPLE PORTLET CONFIGURATION MODAL FORM-->
-			<div class="modal fade" id="portlet-config" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-				<div class="modal-dialog">
-					<div class="modal-content">
-						<div class="modal-header">
-							<button type="button" class="close" data-dismiss="modal" aria-hidden="true"></button>
-							<h4 class="modal-title">Modal title</h4>
-						</div>
-						<div class="modal-body">
-							 Widget settings form goes here
-						</div>
-						<div class="modal-footer">
-							<button type="button" class="btn blue">Save changes</button>
-							<button type="button" class="btn default" data-dismiss="modal">Close</button>
-						</div>
-					</div>
-					<!-- /.modal-content -->
-				</div>
-				<!-- /.modal-dialog -->
-			</div>
-			<!-- /.modal -->
-			<!-- END SAMPLE PORTLET CONFIGURATION MODAL FORM-->
-			
-			
-
-			<div class="page-bar">
-			</div>
-<div class="row" style="margin-top:40px;">
-<div class="col-md-2"></div>
-<div class="col-md-6">
-		
-		<div class="col-md-12">
-		<h3 class="page-title">
-			Event
-			</h3>
-			<div class="portlet blue-hoki box">
-			    <div class="portlet-title">
-						          <div class="caption">
-								        Event Details
-							      </div>
-				</div>
-				<div class="portlet-body">
-						<div id="tree_1" class="tree-demo">
-							<div class="row">
-							     <div class="col-md-3">Event Title:</div>
-							           <div class="col-md-9" style="color:#44b6ae"> Office Managenment Online Traning Course</div>
-							     </div>
-							     <div class="row">
-							           <div class="col-md-3">Event Type:</div>
-							           <div class="col-md-9"> Training</div>
-							     </div>
-							     <div class="row">
-							           <div class="col-md-3">Event Description:</div>
-							           <div class="col-md-9"> Certified Six Sigma Green Belt, a popular business management strategy is widely used accross industries towards quality and                                                 process improvement. Certification training program is aligned with ASQ Body of Knowledge. Six Sigma is a set techniques and                                              tools which seeks to focus on customer requirements through minizing variability in manufacturing and improving process quality. Six                                       sigma's emphasis is on improving the capability of a process rather than controlling product quality. Use this text for event                                                       description.</div>
-							    </div>
-								
-					     </div>
-				    </div>
-			   </div>
-		</div>
-
-		<div class="col-md-12">
-			      <div class="portlet blue-hoki box">
-					          <div class="portlet-title">
-						          <div class="caption">
-								        Venue Details
-							      </div>
-						      </div>
-				              <div class="portlet-body">
-						        <div id="tree_1" class="tree-demo">
-							     <div class="col-md-3">
-							          <div id="img">
-							             <img width="100" height="95" alt="150x150" src="assets\frontend\onepage\img\facts.jpg">
-								      </div>
-								 </div>
-								  
-							     <div id="text"><p style="color:#44b6ae">Office Management Online Training Course</p>
-                                <i class="icon-pointer"></i>1675 Fifth Ave,<br>
-                                Greece,<br>
-                               New York.<br>
-							   Wednesday, Oct 8 2014 from 7.00 PM to 10 PM.
-						      </div>
-					       </div>
-				      </div>
-			  </div>
-		</div>
-		<div class="col-md-12">
-			      <div class="portlet blue-hoki box">
-					      <div class="portlet-title">
-						          <div class="caption">
-								        Organizer Contact Details
-							      </div>
-						     </div>
-				<div class="portlet-body">
-						<div id="tree_1" class="tree-demo">
-							 
-							<div class="row">
-							     <div class="col-md-3">Contact Name:</div>
-							           <div class="col-md-9">  Charles</div>
-							 </div>
-							 <div class="row">
-							     <div class="col-md-3">Email:</div>
-							     <div class="col-md-9">  Charles@gmail.com</div>
-					          </div>
-                             <div class="row">
-							     <div class="col-md-3">Phone Number:</div>
-							      <div class="col-md-9">6097600324</div>
-					         </div>
-				      </div>
-			  </div>
 		</div>
 	</div>
-
+	<!-- END SIDEBAR -->
+	<div class="page-content-wrapper">	
+		<div class="page-content" style="min-height:1028px">
+			
 		
+         <h3 class="page-title">
+			Generate Coupons 
+			</h3>
 
 
-		
-</div>
+         <div class="page-bar">
+				<ul class="page-breadcrumb">
+					<li>
+						<i class="fa fa-home"></i>
+						<a href="dashboard.html">Home</a>
+						<i class="fa fa-angle-right"></i>
+					</li>
+					<li>
+						<a href="GenerateCoupons.html">Generate Coupons </a>
+					</li>
+				</ul>
+				</div>
 
-<div class="col-md-3" style="margin-top:45px">
-		<div class="portlet blue-hoki box">
-				    <div class="portlet-title">
-						  <div class="caption">
-								You Can...
+		  
+         <div class="col-md-1"></div>
+		  <div class="col-md-6">
+           <div class="portlet blue-hoki box">
+                <div class="portlet-title">
+                    <div class="caption">
+                      Generate Coupons
+                     </div>
+                </div>
+                    <div class="portlet-body">
+                       <div id="tree_1" class="tree-demo">
+					      <div class="form-group">
+
+                            <div class="row">
+							  <label class="col-md-3">Discount Name</label>
+								 <div class="col-md-5">
+									<input type="text" class="form-control" placeholder="">
+						         </div>
+						   </div>
 						  </div>
-				   </div>
-					<div class="portlet-body">
-							<div id="tree_1" class="tree-demo">
-								<div>
-										
-								        <a href="mail.html"><p>Send Invitations</p></a>
-								        <a href="ShareEvent.html"><p>Share Using Social Media</p></a>
-								 </div>
-							</div>
-					</div>
-			</div>
-               
-		
-   	 
-</div>
+						  <!--/row-->
+                           <div class="form-group">
 
-<div class="col-md-3" style="margin-top:45px">
-		<div class="portlet blue-hoki box">
-				    <div class="portlet-title">
-						  <div class="caption">
-								Share
+						   <div class="row">
+							  <label class="col-md-3">Discount </label>
+								 <div class="col-md-5">
+									<input type="text" class="form-control" placeholder="">
+						         </div>
+								 <div class="col-md-2">
+								   <label class="inline">
+									 <input name="form-field-radio" type="radio" class="ace" />
+											<span class="lbl middle">$</span>
+									</label>
+								 </div>
+								  <div class="col-sm-2">
+								    <label class="inline">
+								       <input name="form-field-radio" type="radio" class="ace" />
+							            <span class="lbl middle">%</span>
+									</label>
+								  </div>
+
+							  </div>
+						   </div>
+						   <!--/row-->
+						   <div class="form-group">
+
+                            <div class="row">
+							  <label class="col-md-3">Start Date</label>
+								 <div class="col-md-5">
+									<input type="text" id="startdate" class="form-control" placeholder="">
+						         </div>
+						    </div>
 						  </div>
-				   </div>
-					<div class="portlet-body">
-							<div id="tree_1" class="tree-demo">
-								<div>
-										<a href="https://www.facebook.com"><button ><i class="fa fa-facebook"></i> Facebook</button></a>
-<a href="https://www.twitter.com"><button ><i class="fa fa-twitter"></i> Twitter</button>
-<a href="https://www.share.com"><button><i class="fa fa-share"></i> Share</button></a>
-								     
-								 </div>
-							</div>
-					</div>
-			</div>
-               
-		
-   	 
+						   <!--/row-->
+						   <div class="form-group">
+
+                            <div class="row">
+							  <label class="col-md-3">End Date</label>
+								 <div class="col-md-5">
+									<input type="text" id="enddate" class="form-control" placeholder="">
+						         </div>
+						    </div>
+						  </div>
+						   <!--/row-->
+						   <div class="form-group">
+
+                            <div class="row">
+							  <label class="col-md-3">No of coupons</label>
+								 <div class="col-md-5">
+									<input type="text" class="form-control" placeholder="">
+						         </div>
+						    </div>
+						  </div>
+						   <!--/row-->
+						   <div class="form-group">
+
+                            <div class="row">
+							  <div class="col-md-3"></div>
+								 <div class="col-md-5">
+										<button type="submit" class="btn blue">Generate</button>
+						         </div>
+						    </div>
+						  </div>
+						   <!--/row-->
+				          </div>
+                       <div>
+                    </div>
+           </div>
+     
+		 </div>	
+	 </div>
+   </div>
+<!-- END CONTAINER -->
+<!-- BEGIN FOOTER ---->
+<div class="page-footer">
+	<div class="page-footer-inner">
+		 
+	</div>
+	<div class="scroll-to-top">
+		<i class="icon-arrow-up"></i>
+	</div>
 </div>
-
-<div class="row">
-
-<div class="col-md-1"></div>
-<div class="col-md-10">
-<center>
-
-</div>
-
-</div>
-<div class="row">
-
-<div class="col-md-1"></div>
-<div class="col-md-8">
-<div class="row"><br>
-<center><a href="RegisterEvent.html" class="btn blue">Register</a></center>
-
-</div>
-
-
-</div>
-</div>
-
-
+<!-- END FOOTER -->
+<!-- BEGIN JAVASCRIPTS(Load javascripts at bottom, this will reduce page load time) -->
+<!-- BEGIN CORE PLUGINS -->
+<!--[if lt IE 9]>
+<script src="assets/global/plugins/respond.min.js"></script>
+<script src="assets/global/plugins/excanvas.min.js"></script> 
+<![endif]-->
 <script src="assets/global/plugins/jquery.min.js" type="text/javascript"></script>
 <script src="assets/global/plugins/jquery-migrate.min.js" type="text/javascript"></script>
 <!-- IMPORTANT! Load jquery-ui.min.js before bootstrap.min.js to fix bootstrap tooltip conflict with jquery ui tooltip -->
@@ -428,6 +392,25 @@ height:1500px!important;
 <script src="assets/global/plugins/jquery.pulsate.min.js" type="text/javascript"></script>
 <script src="assets/global/plugins/bootstrap-daterangepicker/moment.min.js" type="text/javascript"></script>
 <script src="assets/global/plugins/bootstrap-daterangepicker/daterangepicker.js" type="text/javascript"></script>
+<script type="text/javascript" src="assets/global/plugins/fuelux/js/spinner.min.js"></script>
+<script type="text/javascript" src="assets/global/plugins/bootstrap-fileinput/bootstrap-fileinput.js"></script>
+<script type="text/javascript" src="assets/global/plugins/jquery-inputmask/jquery.inputmask.bundle.min.js"></script>
+<script type="text/javascript" src="assets/global/plugins/jquery.input-ip-address-control-1.0.min.js"></script>
+<script src="assets/global/plugins/bootstrap-pwstrength/pwstrength-bootstrap.min.js" type="text/javascript"></script>
+<script src="assets/global/plugins/bootstrap-switch/js/bootstrap-switch.min.js" type="text/javascript"></script>
+<script src="assets/global/plugins/jquery-tags-input/jquery.tagsinput.min.js" type="text/javascript"></script>
+<script src="assets/global/plugins/bootstrap-maxlength/bootstrap-maxlength.min.js" type="text/javascript"></script>
+<script src="assets/global/plugins/bootstrap-touchspin/bootstrap.touchspin.js" type="text/javascript"></script>
+<script src="assets/global/plugins/typeahead/handlebars.min.js" type="text/javascript"></script>
+<script src="assets/global/plugins/typeahead/typeahead.bundle.min.js" type="text/javascript"></script>
+<script type="text/javascript" src="assets/global/plugins/ckeditor/ckeditor.js"></script>
+<script type="text/javascript" src="assets/global/plugins/bootstrap-datepicker/js/bootstrap-datepicker.js"></script>
+<script type="text/javascript" src="assets/global/plugins/bootstrap-timepicker/js/bootstrap-timepicker.min.js"></script>
+<script type="text/javascript" src="assets/global/plugins/clockface/js/clockface.js"></script>
+<script type="text/javascript" src="assets/global/plugins/bootstrap-daterangepicker/moment.min.js"></script>
+<script type="text/javascript" src="assets/global/plugins/bootstrap-daterangepicker/daterangepicker.js"></script>
+<script type="text/javascript" src="assets/global/plugins/bootstrap-colorpicker/js/bootstrap-colorpicker.js"></script>
+<script type="text/javascript" src="assets/global/plugins/bootstrap-datetimepicker/js/bootstrap-datetimepicker.min.js"></script>
 <!-- IMPORTANT! fullcalendar depends on jquery-ui.min.js for drag & drop support -->
 <script src="assets/global/plugins/fullcalendar/fullcalendar.min.js" type="text/javascript"></script>
 <script src="assets/global/plugins/jquery-easypiechart/jquery.easypiechart.min.js" type="text/javascript"></script>
@@ -441,8 +424,6 @@ height:1500px!important;
 <script src="assets/admin/pages/scripts/index.js" type="text/javascript"></script>
 <script src="assets/admin/pages/scripts/tasks.js" type="text/javascript"></script>
 <!-- END PAGE LEVEL SCRIPTS -->
-
-
 <script>
 jQuery(document).ready(function() {    
    Metronic.init(); // init metronic core componets
@@ -459,6 +440,28 @@ jQuery(document).ready(function() {
    Tasks.initDashboardWidget();
 });
 </script>
+<script type="text/javascript">
+  $(document).ready(function () {
+                $('#startdate').datepicker({
+                    format: "dd/mm/yyyy",
+     autoclose: true,
+                     todayBtn: true,
+                    pickerPosition: "bottom-left"
+                });  
+            
+  });
+  </script>
+  <script type="text/javascript">
+  $(document).ready(function () {
+                $('#enddate').datepicker({
+                    format: "dd/mm/yyyy",
+     autoclose: true,
+                     todayBtn: true,
+                    pickerPosition: "bottom-left"
+                });  
+            
+  });
+  </script>
 <!-- END JAVASCRIPTS -->
 </body>
 <!-- END BODY -->

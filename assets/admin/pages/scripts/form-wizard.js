@@ -34,72 +34,14 @@ var FormWizard = function () {
                 focusInvalid: false, // do not focus the last invalid input
                 rules: {
                     //account
-                    eventtitle: {
-                       
-                        required: true
-                    },
-                    locations: {
-                        
-                        required: true
-                    },
+                    
 					
                     
 					
 					
                     
                     //profile
-                    state: {
-                        required: true
-                    },
-                    zip: {
-                        required: true,
-                        
-                    },
-                    phone: {
-                        required: true
-                    },
-                    startdate: {
-                        required: true
-                    },
-                    address: {
-                        required: true
-                    },
-                    city: {
-                        required: true
-                    },
-                    enddate: {
-                        required: true
-                    },
-					eventlogo: {
-                        required: true
-                    },
-					eventdescription: {
-                        required: true
-                    },
-				    organizername: {
-                        required: true
-                    },
-					describeorganizer: {
-                        required: true
-                    },
-					eventfee: {
-                        required: true
-                    },
-					eventtype: {
-                        required: true
-                    },
-				    totalregistrtions: {
-                        required: true
-                    },
-				    maxregistrations: {
-                        required: true
-                    },
-					contactname: {
-                        required: true
-                    },
-					email: {
-                        required: true
-                    },
+                    
                     //payment
                     
                 },
