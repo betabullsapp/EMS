@@ -16,7 +16,7 @@ License: You must have a valid license purchased only from themeforest(the above
 <html lang="en" class="no-js">
 <!--<![endif]-->
 <!-- BEGIN HEAD -->
-<head>
+<head>	
 <meta charset="utf-8"/>
 <title>EventManagement</title>
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -50,7 +50,10 @@ License: You must have a valid license purchased only from themeforest(the above
 <link rel="shortcut icon" href="favicon.ico"/>
 <style>
 .page-content {
-min-height:800px !important;
+	min-height:850px !important;
+}
+.error-msg{
+	color: red !important;
 }
 </style>
 </head>
@@ -72,7 +75,7 @@ min-height:800px !important;
 	<div class="page-header-inner">
 		<!-- BEGIN LOGO -->
 		<div class="page-logo">
-			<a href="index.html">
+			<a href="#">
 			<img src="assets/images/logo.png" alt="logo" class="logo-default" style="margin: 7px 0px 0px -38px;!important; height: 32px;!important; width: 227px;!important;"/><!--b><h4 class="green-haze">EventManagement</h4></b-->
 			</a>
 			<div class="menu-toggler sidebar-toggler hide">
@@ -254,51 +257,72 @@ min-height:800px !important;
 					
 						<form class="form-horizontal">
 						  <div class="form-group">
-							<label for="inputEmail3" class="col-md-2 control-label">Name</label>
-							<div class="col-md-10">
-							  <input class="form-control" id="inputEmail3" placeholder="Name">
+							<label for="inputEmail3" class="col-md-4 control-label">Name
+								<span class="required" aria-required="true"> * </span>
+							</label>
+							<div class="col-md-8">
+							  <input class="form-control" id="Rname" placeholder="Name">
+							  <span id="RnameMsg" class="error-msg"></span>
 							</div>
 						  </div>
 						  <div class="form-group">
-							<label for="inputPassword3" class="col-md-2 control-label">Email</label>
-							<div class="col-md-10">
-							  <input type="email" class="form-control" id="inputPassword3" placeholder="Email Address">
+							<label for="inputPassword3" class="col-md-4 control-label">Email
+								<span class="required" aria-required="true"> * </span>
+							</label>
+							<div class="col-md-8">
+							  <input type="email" class="form-control" id="Remail" placeholder="Email Address">
+							  <span id="RemailMsg" class="error-msg"></span>
 							</div>
 						  </div>
 						  <div class="form-group">
-							<label for="inputEmail3" class="col-md-2 control-label">Mobile No</label>
-							<div class="col-md-10">
-							  <input  class="form-control" id="inputEmail3" placeholder="Mobile Number">
+							<label for="inputEmail3" class="col-md-4 control-label">Mobile No
+								<span class="required" aria-required="true"> * </span>
+							</label>
+							<div class="col-md-8">
+							  <input  class="form-control" id="Rnum" placeholder="Mobile Number">
+							  <span id="RnumMsg" class="error-msg"></span>
 							</div>
 						  </div>
 						  <div class="form-group">
-							<label for="inputPassword3" class="col-md-2 control-label">Address1</label>
-							<div class="col-md-10">
-							  <input class="form-control" id="inputPassword3" placeholder="Address">
+							<label for="inputPassword3" class="col-md-4 control-label">Address Line 1
+								<span class="required" aria-required="true"> * </span>
+							</label>
+							<div class="col-md-8">
+							  <input class="form-control" id="Radd" placeholder="Address">
+							  <span id="RaddMsg" class="error-msg"></span>
 							</div>
 						  </div>
 						  <div class="form-group">
-							<label for="inputEmail3" class="col-md-2 control-label">Address2</label>
-							<div class="col-md-10">
+							<label for="inputEmail3" class="col-md-4 control-label">Address Line 2</label>
+							<div class="col-md-8">
 							  <input class="form-control" id="inputEmail3" placeholder="Address2">
 							</div>
 						  </div>
 						  <div class="form-group">
-							<label for="inputPassword3" class="col-md-2 control-label">City</label>
-							<div class="col-md-10">
-							  <input class="form-control" id="inputPassword3" placeholder="City">
+							<label for="inputPassword3" class="col-md-4 control-label">City
+								<span class="required" aria-required="true"> * </span>
+							</label>
+							<div class="col-md-8">
+							  <input class="form-control" id="Rcity" placeholder="City">
+							  <span id="RcityMsg" class="error-msg"></span>
 							</div>
 						  </div>
 						  <div class="form-group">
-							<label for="inputEmail3" class="col-md-2 control-label">State</label>
-							<div class="col-md-10">
-							  <input class="form-control" id="inputEmail3" placeholder="State">
+							<label for="inputEmail3" class="col-md-4 control-label">State
+								<span class="required" aria-required="true"> * </span>
+							</label>
+							<div class="col-md-8">
+							  <input class="form-control" id="Rstate" placeholder="State">
+							  <span id="RstateMsg" class="error-msg"></span>
 							</div>
 						  </div>
 						  <div class="form-group">
-							<label for="inputPassword3" class="col-md-2 control-label">PostalCode</label>
-							<div class="col-md-10">
-							  <input class="form-control" id="inputPassword3" placeholder="PostalCode">
+							<label for="inputPassword3" class="col-md-4 control-label">Zip/PostalCode
+								<span class="required" aria-required="true"> * </span>
+							</label>
+							<div class="col-md-8">
+							  <input class="form-control" id="RPcode" placeholder="PostalCode">
+							  <span id="RPcodeMsg" class="error-msg"></span>
 							</div>
 						  </div>
 						</form>		
@@ -313,10 +337,13 @@ min-height:800px !important;
 								
 					</div>
 					<div class="portlet-body ">
-					<div class="col-md-4">No.of Available Registrations</div>
-					<div class="col-md-6">30</div>
-					<div class="col-md-4 margin-top-15">Quantity</div>
-					<div class="col-md-6 margin-top-15">
+					<div class="row">
+						<div class="col-md-4">No.of Available Registrations</div>
+						<div class="col-md-6">30</div>
+					</div>
+					<div class="row">
+						<div class="col-md-4 margin-top-15">Quantity</div>
+						<div class="col-md-6 margin-top-15">
 							  <select>
 								<option>1</option>
 								<option>2</option>
@@ -351,11 +378,13 @@ min-height:800px !important;
 							  </select>
 							</div>
 						
+						</div>	
 							
-							<a href="payment.html" class="btn blue">Proceed to Payment</a>
 								
 					</div>
 				</div>
+				<div class="clearfix"></div>
+				<a href="#" id="proceed" class="btn blue">Proceed to Payment</a>
 			</div>
 			
 			<div class="col-md-2"></div>
@@ -434,6 +463,85 @@ jQuery(document).ready(function() {
    Index.initMiniCharts();
    Tasks.initDashboardWidget();
 });
+</script>
+<script>
+
+	$(document).ready(function(){
+	
+		$("#proceed").click(function(){
+		var count = 0;
+			if($("#Rname").val() == "")
+			{
+				$("#RnameMsg").html("Name is mandatory");
+				
+			}else
+			{
+				$("#RnameMsg").html("");
+				count++;
+			}
+			if($("#Remail").val() == "")
+			{
+				$("#RemailMsg").html("Email is mandatory");
+				
+			}else
+			{
+				$("#RemailMsg").html("");
+				count++;
+			}
+			if($("#Rnum").val() == "")
+			{
+				$("#RnumMsg").html("Mobile number is mandatory");
+				
+			}else
+			{
+				$("#RnumMsg").html("");
+				count++;
+			}
+			if($("#Radd").val() == "")
+			{
+				$("#RaddMsg").html("Address is mandatory");
+				
+			}else
+			{
+				$("#RaddMsg").html("");
+				count++;
+			}
+			if($("#Rcity").val() == "")
+			{
+				$("#RcityMsg").html("City is mandatory");
+				
+			}else
+			{
+				$("#RcityMsg").html("");
+				count++;
+			}
+			if($("#Rstate").val() == "")
+			{
+				$("#RstateMsg").html("State is mandatory");
+				
+			}else
+			{
+				$("#RstateMsg").html("");
+				count++;
+			}
+			if($("#RPcode").val() == "")
+			{
+				$("#RPcodeMsg").html("Zip/Pin code is mandatory");
+				
+			}else
+			{
+				$("#RPcodeMsg").html("");
+				count++;
+			}
+			if(count == 7)
+			{
+				//alert(count);
+				window.location.href = "payment.html";
+			}else{
+				//alert(count);
+			}
+		});
+	});
 </script>
 <!-- END JAVASCRIPTS -->
 </body>
