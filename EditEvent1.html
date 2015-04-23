@@ -59,7 +59,11 @@ License: You must have a valid license purchased only from themeforest(the above
 <link href="assets/admin/layout/css/custom.css" rel="stylesheet" type="text/css"/>
 <!-- END THEME STYLES -->
 <link rel="shortcut icon" href="favicon.ico"/>
-
+<style>
+.page-content{
+height:2300px;
+}
+</style>
 </head>
 <!-- END HEAD -->
 <!-- BEGIN BODY -->
@@ -231,29 +235,33 @@ License: You must have a valid license purchased only from themeforest(the above
 	<!-- END SIDEBAR -->
 	<div class="page-content-wrapper">
 		<div class="page-content" style="min-height:1028px">
-			<div class="portlet-body">
-								<div class="tabbable">
-									<ul class="nav nav-tabs">
-										<li class="active">
-											<a href="#tab_general" data-toggle="tab">
-											Event Details </a>
-										</li>
-										<li>
-											<a href="#tab_meta" data-toggle="tab">
-											Event Settings </a>
-										</li>
-										<li>
-											<a href="#tab_images" data-toggle="tab">
-											Contact Information </a>
-										</li>
-										
-									</ul>
-									<div class="tab-content no-space">
-										<div class="tab-pane active" id="tab_general">
-											<div class="form-body">
-											  <h3 class="form-section"><button class="btn btn-primary">1</button>Event Details</h3>
-												 <div class="row">
-													<div class="col-md-6">
+			<div class="portlet-body form">
+		   <form action="#" class="form-horizontal">
+		   <h3 class="page-title">
+			Edit
+			</h3>
+			<div class="page-bar">
+				<ul class="page-breadcrumb">
+					<li>
+						<i class="fa fa-home"></i>
+						<a href="dashboard.html">Home</a>
+						<i class="fa fa-angle-right"></i>
+					</li>
+					<li>
+						<a href="dashboard.html">Dashboard</a>
+						<i class="fa fa-angle-right"></i>
+					</li>
+					<li>
+						<a href="EditEvent.html">Edit</a>
+						
+					</li>
+					</div>
+		    <div class="col-md-6">
+              <div class="form-body">
+			  
+			    <h3 class="form-section"><button class="btn btn-primary">1</button>Event Details</h3>
+					                             <div class="row">
+													<div class="col-md-12">
 														<div class="form-group">
 															<label class="control-label col-md-3">Event Title </label>
 															<div class="col-md-9">
@@ -310,7 +318,6 @@ License: You must have a valid license purchased only from themeforest(the above
 															     <input type="text" id="endtime"  class="form-control">
 															</div>
 														</div>
-														
 														<div class="form-group last">
 										                   <label class="control-label col-md-3">Event Logo</label>
 										                 <div class="col-md-9">
@@ -332,12 +339,9 @@ License: You must have a valid license purchased only from themeforest(the above
 													                 Remove </a>
 												                </div>
 											               </div>
-											              
-										                   </div>
-									                     </div>
-													 </div>
-												   <div class="col-md-6">
-												   <div class="row">
+											
+										                </div>
+									                 </div>
 													 <div class="form-group">
 															<label class="control-label col-md-3">Event Description</label>
 															<div class="col-md-9">
@@ -365,16 +369,15 @@ License: You must have a valid license purchased only from themeforest(the above
 																<input type="text" class="form-control">
 															</div>
 														</div>
-														</div>
-												    </div>
-												</div>
-										     </div>
-										</div>
-										<div class="tab-pane" id="tab_meta">
-											<div class="form-body">
-											 <h3 class="form-section"><button class="btn btn-primary">2</button>Event Settings</h3>
-												 <div class="row">
-													<div class="col-md-6">
+											</div>
+									</div>
+			        </div>
+		    </div>
+		    <div class="col-md-6">
+			  <div class="form-body">
+			    <h3 class="form-section"><button class="btn btn-primary">2</button>Event Settings</h3>
+					                             <div class="row">
+													<div class="col-md-12">
                                                         <div class="form-group">
 															<label class="control-label col-md-3">Event Type</label>
 															<div class="col-md-9">
@@ -420,18 +423,7 @@ License: You must have a valid license purchased only from themeforest(the above
 															</div>
 															</div>
 														</div>
-                                                   
-
-                                                     </div>
-												</div>
-												
-												
-											</div>
-										</div>
-										<div class="tab-pane" id="tab_images">
-										 
-                                           <h3 class="form-section"><button class="btn btn-primary">3</button>Contact Details</h3>
-										       <div class="col-md-6">
+                                                    <h3 class="form-section"><button class="btn btn-primary">3</button>Contact Details</h3>
                                                             <div class="form-group">
 														<label class="control-label col-md-3">Contact Name
 															</label>
@@ -462,22 +454,16 @@ License: You must have a valid license purchased only from themeforest(the above
 																<button type="button" class="btn default">Cancel</button>
 															</div>
 														</div>
-                                                     </div>
 
-										             </div>
-														
-														
-															
-															
-											          </div>
-											
-										
-										
-											
-								</div>
-							</div>
-						</div>
-				</div>
+                                                     </div>
+												</div>
+					
+                      </div>
+		        </div>
+		   </form>
+		  </div>
+			
+		</div>
 	</div>
 <!-- END CONTAINER -->
 <!-- BEGIN FOOTER -->
