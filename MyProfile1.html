@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <!-- 
 Template Name: Metronic - Responsive Admin Dashboard Template build with Twitter Bootstrap 3.3.2
@@ -71,14 +72,14 @@ License: You must have a valid license purchased only from themeforest(the above
 <!-- DOC: Apply "page-footer-fixed" class to the body element to have fixed footer -->
 <!-- DOC: Apply "page-sidebar-reversed" class to put the sidebar on the right side -->
 <!-- DOC: Apply "page-full-width" class to the body element to have full width page without the sidebar menu -->
-<body class="page-header-fixed page-quick-sidebar-over-content page-style-square">
+<body class="page-header-fixed page-quick-sidebar-over-content page-style-square" style="overflow-x:hidden;">
 <!-- BEGIN HEADER -->
 <div class="page-header navbar navbar-fixed-top">
 	<!-- BEGIN HEADER INNER -->
 	<div class="page-header-inner">
 		<!-- BEGIN LOGO -->
 		<div class="page-logo">
-			<a href="index.html">
+			<a href="dashboard.html">
 			<img src="assets/images/logo.png" alt="logo" class="logo-default" style="margin: 7px 0px 0px -38px;!important; height: 32px;!important; width: 227px;!important;"/><!--b><h4 class="green-haze">EventManagement</h4></b-->
 			</a>
 			<div class="menu-toggler sidebar-toggler hide">
@@ -109,11 +110,11 @@ License: You must have a valid license purchased only from themeforest(the above
 					</a>
 					<ul class="dropdown-menu dropdown-menu-default">
 						<li>
-							<a href="extra_profile.html">
+							<a href="myprofile.html">
 							<i class="icon-user"></i> My Profile </a>
 						</li>
 						<li>
-							<a href="page_calendar.html">
+							<a href="settings.html">
 							<i class="fa fa-cog"></i> Settings </a>
 						</li>
 						
@@ -198,9 +199,9 @@ License: You must have a valid license purchased only from themeforest(the above
 				</li>
 				
 				<li class="start active open">
-					<a href="MyProfile.html">
+					<a href="myprofile.html">
 					<i class="icon-user"></i>
-					<span class="title">MyProfile</span>
+					<span class="title">My Profile</span>
 					<span class="selected"></span>
 					<span class="arrow open"></span>
 					</a>
@@ -236,11 +237,11 @@ License: You must have a valid license purchased only from themeforest(the above
 				<ul class="page-breadcrumb">
 					<li>
 						<i class="fa fa-home"></i>
-						<a href="index.html">Home</a>
+						<a href="dashboard.html">Home</a>
 						<i class="fa fa-angle-right"></i>
 					</li>
 					<li>
-						<a href="#">MyProfile</a>
+						<a href="MyProfile.html">MyProfile</a>
 					</li>
 				</ul>
 				<!--div class="page-toolbar">
@@ -250,69 +251,57 @@ License: You must have a valid license purchased only from themeforest(the above
 				</div-->
 			</div>
 			<!--h2>Account Information</h2><hr/-->
-			<div class="row margin-top-20">
-				<div class="col-md-12">
-					<!-- BEGIN PROFILE SIDEBAR -->
-					<div class="profile-sidebar">
+			<div class="row">
+			<div class="row ">
+				<div class="col-md-2 col-sm-2 col-xs-2"></div>
+				 <div class="col-md-7 col-sm-7 col-xs-7">
+				      <div class="row">
+				<!--	BEGIN PROFILE SIDEBAR-->
+					
+				           	<div class="profile-sidebar">
 						<!-- PORTLET MAIN -->
-						
-						<div class="form-group">
+					
+					          <div class="form-group">
 				
-							<!--div action="#" class="form-horizontal pull-left portlet light profile-sidebar-portlet"-->
+							<!--div action="#" class="form-horizontal pull-left portlet light profile-sidebar-portlet"
 							<div class="portlet light profile-sidebar-portlet">
 								<!-- SIDEBAR USERPIC -->
-								<div class="profile-userpic">
-									<img src="assets/admin/pages/media/profile/profile_user.jpg" class="img-responsive useriamge cir" alt="">
-								</div>
-								<br>
-								<center>
-									<span class="btn btn-primary btn-file">
-										<input type="file" onchange="CopyMe(this, 'txtFileName');" id="profile_image" class="file fileinput-new">Change your picture
-									</span>
-								</center>
+								     
+								     <div class="profile-userpic">
+							<div class="row">
+							<!--	<img src="assets/admin/pages/media/profile/profile_user.jpg" class="img-responsive useriamge cir" alt="">-->
+					                        <center><img src="assets/admin/pages/media/profile/profile_user.jpg" class="img-responsive useriamge cir" width="20px" height="70px " ></center>
+								   
+								       
+								     <center>
+									          <span class="btn blue btn-file">
+										      <input type="file" onchange="CopyMe(this, 'txtFileName');" id="profile_image" class="file fileinput-new">Change your picture
+									         </span>
+								       </center>
+									   </div>
+									   </div>
 								<!--/div-->
-        
+    
 							</div>
 				
+						</div></div></div>
+						<div class="col-md-3">
 						</div>
-						<!-- END PORTLET MAIN -->
+						</div></div>
+						<!-- END PORTLET MAIN 
 						<!-- PORTLET MAIN -->
 						
-						<!-- END PORTLET MAIN -->
+						<!-- END PORTLET MAIN 
 					</div>
 					<!-- END BEGIN PROFILE SIDEBAR -->
 					<!-- BEGIN PROFILE CONTENT -->
-					<div class="profile-content">
-						<div class="row">
-							<div class="col-md-12">
-								<div class="portlet light">
-									<div class="portlet-title tabbable-line">
-										<div class="caption caption-md">
-											<i class="icon-globe theme-font hide"></i>
-											<span class="caption-subject font-blue-madison bold uppercase">Account Information</span>
-										</div>
-										<!--ul class="nav nav-tabs">
-											<li class="active">
-												<a href="#tab_1_1" data-toggle="tab">Personal Info</a>
-											</li>
-											<li>
-												<a href="#tab_1_2" data-toggle="tab">Change Avatar</a>
-											</li>
-											<li>
-												<a href="#tab_1_3" data-toggle="tab">Change Password</a>
-											</li>
-											<li>
-												<a href="#tab_1_4" data-toggle="tab">Privacy Settings</a>
-											</li>
-										</ul-->
-									</div>
-									<div class="portlet-body">
-									  <form role="form" action="#">
-										<div class="tab-content">
-											<!-- PERSONAL INFO TAB -->
-											<div class="tab-pane active" id="tab_1_1">
-												
-												<div class="col-md-6">
+					<div class="row">
+					<div class="col-md-1"></div>
+					<div class="col-md-7">
+					      <div class="portlet-body form">
+						    <div class="form-body">
+			                      
+					                    <div class="col-md-6">
 													<div class="form-group">
 														<label class="control-label">First Name</label>
 														<input type="text" placeholder="John" class="form-control">
@@ -333,18 +322,21 @@ License: You must have a valid license purchased only from themeforest(the above
 														<label class="control-label">Mobile No</label>
 														<input type="text" placeholder="9865848958" class="form-control">
 													</div>
-													
 												</div>
-												
 												<div class="col-md-6">
 													<div class="form-group">
 														<label class="control-label">Address Line 1</label>
 														<input type="text" placeholder="Address Line 1" class="form-control">
 													</div>
+												
+												
+												
 													<div class="form-group">
 														<label class="control-label">Address Line 2</label>
 														<input type="text" placeholder="Address Line 2" class="form-control">
 													</div>
+													
+													
 													<div class="form-group">
 														<label class="control-label">City</label>
 														<input type="text" placeholder="New Jersey" class="form-control">
@@ -353,7 +345,8 @@ License: You must have a valid license purchased only from themeforest(the above
 														<label class="control-label">State</label>
 														<input type="text" placeholder="New Jersey" class="form-control">
 													</div>
-													<div class="row">
+													<div class="form-group">
+													  <div class="row">
 													  <div class="col-md-6">
 														<label class="control-label">Country</label>
 														<input type="text" placeholder="USA" class="form-control">
@@ -363,63 +356,42 @@ License: You must have a valid license purchased only from themeforest(the above
 														<input type="text" placeholder="54445" class="form-control">
 													</div>
 												</div>
-												</div>
-													
-												<div class="form-actions">
-													<div class="row">
-														<div class="col-md-offset-3 col-md-9">
-															
-															<button type="submit" class="btn blue"><i class="fa fa-check"></i> Update</button>
-															<button type="button" class="btn default">Cancel</button>
-														</div>
-													</div>
-												</div>
-													
-													
-												
+											
 											</div>
+										  </div>
+										</div>
+										<div class="form-group">
+										 <div class="portlet-body form">
+						                    <div class="form-body">
+											<div class="col-md-11">
+											<center>
+                                          <button type="submit" class="btn blue"><i class="fa fa-check"></i> Update</button>
+										  
+										  
+								           <button type="button" class="btn default">Cancel</button></center>
+										   </div>
+										   
+										 </div>
+										 </div>
+										 </div>
+									
+										
+							          
+								   	
 											<!-- END PERSONAL INFO TAB -->																																											
-										</div>
-									  </form>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-					<!-- END PROFILE CONTENT -->
-				</div>
-			</div> 
+										
 			
-			<!--div class="portlet-body form">
-							<form class="form-horizontal" role="form">
-								<div class="form-body">
-									<div class="form-group">
-										<label class="col-md-3 control-label">First Name</label>
-										<div class="col-md-9">
-											<input type="text" class="form-control input-inline input-medium" placeholder="First Name">	
-										</div>
-									</div>
-									
-									
-								</div>
-								<div class="form-actions">
-									<div class="row">
-										<div class="col-md-offset-3 col-md-9">
-											<button type="submit" class="btn green">Submit</button>
-											<button type="button" class="btn default">Cancel</button>
-										</div>
-									</div>
-								</div>
-							</form>
-						</div-->
-						
+				</div>
+			</div>			
 		</div>
 	</div>
+	
+													
 <!-- END CONTAINER -->
 <!-- BEGIN FOOTER -->
 <div class="page-footer">
 	<div class="page-footer-inner">
-		 2014 &copy; Metronic by keenthemes.
+		
 	</div>
 	<div class="scroll-to-top">
 		<i class="icon-arrow-up"></i>
@@ -490,7 +462,7 @@ jQuery(document).ready(function() {
    Tasks.initDashboardWidget();
 });
 </script>
-<script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+
 		<script> 
 		 $(function () {
         $('#profile_image').change(function (e) {
