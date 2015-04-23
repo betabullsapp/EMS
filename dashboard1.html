@@ -100,7 +100,7 @@ License: You must have a valid license purchased only from themeforest(the above
 						
 						<li>
 							<a href="settings.html">
-							<i class="icon-diamond"></i> Setting </a>
+							<i class="fa fa-cog"></i> Setting </a>
 						</li>
 						<li>
 							<a href="login.html">
@@ -167,7 +167,7 @@ License: You must have a valid license purchased only from themeforest(the above
 				</li>
 				<li>
 					<a href="CreateEvent.html">
-					<i class="icon-basket"></i>
+					<i class="fa fa-calendar"></i>
 					<span class="title">Create New Event</span>
 					<span class="arrow "></span>
 					</a>
@@ -176,7 +176,7 @@ License: You must have a valid license purchased only from themeforest(the above
 				
 				<li>
 					<a href="MyProfile.html">
-					<i class="icon-rocket"></i>
+					<i class="icon-user"></i>
 					<span class="title">My Profile</span>
 					<span class="arrow "></span>
 					</a>
@@ -184,7 +184,7 @@ License: You must have a valid license purchased only from themeforest(the above
 				</li>
 				<li>
 					<a href="settings.html">
-					<i class="icon-diamond"></i>
+					<i class="fa fa-cog"></i>
 					<span class="title">Settings</span>
 					<span class="arrow "></span>
 					</a>
@@ -239,14 +239,14 @@ License: You must have a valid license purchased only from themeforest(the above
 				<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
 					<div class="dashboard-stat blue-madison">
 						<div class="visual">
-							<i class="fa fa-comments"></i>
+							<i class="fa fa-calendar"></i>
 						</div>
 						<div class="details">
 							<div class="number">
 								 130
 							</div>
 							<div class="desc">
-								 Total Events
+								 Active Events
 							</div>
 						</div>
 						<a class="more" href="#">
@@ -264,7 +264,7 @@ License: You must have a valid license purchased only from themeforest(the above
 								 590
 							</div>
 							<div class="desc">
-								 Total Participants
+								 Number of Registrations
 							</div>
 						</div>
 						<a class="more" href="#">
@@ -279,7 +279,7 @@ License: You must have a valid license purchased only from themeforest(the above
 						</div>
 						<div class="details">
 							<div class="number">
-								 4900 $
+								 $ 4900
 							</div>
 							<div class="desc">
 								 Total Amount
@@ -293,18 +293,18 @@ License: You must have a valid license purchased only from themeforest(the above
 				<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
 					<div class="dashboard-stat purple-plum">
 						<div class="visual">
-							<i class="fa fa-globe"></i>
+							<i class="fa fa-calendar"></i>
 						</div>
 						<div class="details">
 							<div class="number">
-								 900 $
+								 120
 							</div>
 							<div class="desc">
-								 Total Discount
+								 Total Completed Events
 							</div>
 						</div>
 						<a class="more" href="#">
-						View more <i class="m-icon-swapright m-icon-white"></i>
+							View more <i class="m-icon-swapright m-icon-white"></i>
 						</a>
 					</div>
 				</div>
@@ -312,224 +312,140 @@ License: You must have a valid license purchased only from themeforest(the above
 			<!-- END DASHBOARD STATS -->
 			<div class="clearfix">
 			</div>
-			
-			<div class="row ">
-				<div class="col-md-6 col-sm-6">
-					<div class="portlet box purple-wisteria">
-						<div class="portlet-title">
-							<div class="caption" style="padding:0 0;">
-								<h4> <i class="fa fa-calendar"></i> Event </h4>
-							</div>
-							<div class="actions" style="padding:0 0;">
-								<h4>Live</h4>
-							</div>
-						</div>
-						<div class="portlet-body">
-							<div class="row">
-								<div class="col-md-12">
-									<div class="col-md-8">
-										<h4 style="color:#44b6ae"><span>Office Management Online Training  ...... </span></h4>
-										<div class="clearfix"></div>
-										<h5>
-											<span>
-												<i class="icon-pointer"></i>1675 Fifth Ave, Greece, New York. 
-											</span>
-										</h5>
+			<!-- BEGIN PROFILE CONTENT -->
+					<div class="profile-content">
+						<div class="row">
+							<div class="col-md-12">
+								<div class="portlet light">
+									<div class="portlet-title tabbable-line">
+										<div class="caption caption-md">
+											<i class="icon-globe theme-font hide"></i>
+											<span class="caption-subject font-blue-madison bold uppercase">Events</span>
+										</div>
+										<ul class="nav nav-tabs">
+											<li class="active">
+												<a href="#tab_1_1" data-toggle="tab">Draft (3)</a>
+											</li>
+											<li>
+												<a href="#tab_1_2" data-toggle="tab">Live (2)</a>
+											</li>
+											
+										</ul>
 									</div>
-									
-									<div class="col-md-4 pull-left">
-										<h5 class="pull-right">SAT, APR 11 12:00 PM</h5>
-										<div class="clearfix"></div>
-										<span><img src="assets\frontend\pages\img\careers\careers.jpg" style="width:100%;"></img></span>
-									</div>
-									
-								</div>
+									<div class="col-md-12">
+									<div class="portlet-body">
+										<div class="tab-content">
+											<!-- PERSONAL INFO TAB -->
+											<div class="tab-pane active" id="tab_1_1">
+												<div class="alert alert-block alert-success fade in">
+													<!--button type="button" class="close" data-dismiss="alert"></button-->
+													<h5 class="pull-right pull-top" style="margin-top: -8px;">SAT, APR 11 12:00 PM</h5>
+													<h4 class="alert-heading">Office Management Online Training</h4>
+													
+													<p>
+														<i class="icon-pointer"></i>1675 Fifth Ave, Greece, New York.
+													</p>
+													<p>
+														<a class="btn btn-link" href="EditEvent.html">
+															<i class="fa fa-edit"></i> Edit
+														</a>
+														<a class="btn btn-link" href="view.html">
+															<i class="fa fa-eye"></i> View
+														</a>
+														<span><i class="fa fa-group"></i> Registered 80 of 100</span>
+													</p>
+												</div>
+												<div class="alert alert-block alert-success fade in">
+													<!--button type="button" class="close" data-dismiss="alert"></button-->
+													<h5 class="pull-right pull-top" style="margin-top: -8px;">SAT, APR 11 12:00 PM</h5>
+													<h4 class="alert-heading">Office Management Online Training</h4>
+													
+													<p>
+														<i class="icon-pointer"></i>1675 Fifth Ave, Greece, New York.
+													</p>
+													<p>
+														<a class="btn btn-link" href="EditEvent.html">
+															<i class="fa fa-edit"></i> Edit
+														</a>
+														<a class="btn btn-link" href="view.html">
+															<i class="fa fa-eye"></i> View
+														</a>
+														<span><i class="fa fa-group"></i> Registered 80 of 100</span>
+													</p>
+												</div>
+												<div class="alert alert-block alert-success fade in">
+													<!--button type="button" class="close" data-dismiss="alert"></button-->
+													<h5 class="pull-right pull-top" style="margin-top: -8px;">SAT, APR 11 12:00 PM</h5>
+													<h4 class="alert-heading">Office Management Online Training</h4>
+													
+													<p>
+														<i class="icon-pointer"></i>1675 Fifth Ave, Greece, New York.
+													</p>
+													<p>
+														<a class="btn btn-link" href="EditEvent.html">
+															<i class="fa fa-edit"></i> Edit
+														</a>
+														<a class="btn btn-link" href="view.html">
+															<i class="fa fa-eye"></i> View
+														</a>
+														<span><i class="fa fa-group"></i> Registered 80 of 100</span>
+													</p>
+												</div>
+											</div>
+											<!-- END PERSONAL INFO TAB -->
+											<!-- CHANGE AVATAR TAB -->
+											<div class="tab-pane" id="tab_1_2">
+												<div class="alert alert-block alert-info fade in">
+													<!--button type="button" class="close" data-dismiss="alert"></button-->
+													<h5 class="pull-right pull-top" style="margin-top: -8px;">SAT, APR 11 12:00 PM</h5>
+													<h4 class="alert-heading">Office Management Online Training</h4>
+													
+													<p>
+														<i class="icon-pointer"></i>1675 Fifth Ave, Greece, New York.
+													</p>
+													<p>
+														<a class="btn btn-link" href="EditEvent.html">
+															<i class="fa fa-edit"></i> Edit
+														</a>
+														<a class="btn btn-link" href="view.html">
+															<i class="fa fa-eye"></i> View
+														</a>
+														<span><i class="fa fa-group"></i> Registered 80 of 100</span>
+													</p>
+												</div>
+												<div class="alert alert-block alert-info fade in">
+													<!--button type="button" class="close" data-dismiss="alert"></button-->
+													<h5 class="pull-right pull-top" style="margin-top: -8px;">SAT, APR 11 12:00 PM</h5>
+													<h4 class="alert-heading">Office Management Online Training</h4>
+													
+													<p>
+														<i class="icon-pointer"></i>1675 Fifth Ave, Greece, New York.
+													</p>
+													<p>
+														<a class="btn btn-link" href="EditEvent.html">
+															<i class="fa fa-edit"></i> Edit
+														</a>
+														<a class="btn btn-link" href="view.html">
+															<i class="fa fa-eye"></i> View
+														</a>
+														<span><i class="fa fa-group"></i> Registered 80 of 100</span>
+													</p>
+												</div>
 												
-							</div>
-							<hr style="margin:10px 0"/>
-							<div class="row" style="font-size:12px">
-								<div class="col-sm-3 text-center" >
-									<!-- <a data-toggle="modal" href=".large">
-									<span><i class="fa fa-edit"></i>Edit </a> -->
-									<a href="EditEvent.html"> <span><i class="fa fa-edit"></i>Edit</span> </a>
-								</div>
-								<div class="col-sm-3 text-center">
-									<a href="view.html"><span><i class="fa fa-eye"></i> View</span></a>
-								</div>
-								<div class="col-sm-6 text-center">
-									<span><i class="fa fa-group"></i> Registered 80 of 100</span>
-								</div>
-							</div>
-						</div>
-						
-					</div>
-				</div>
-				<div class="col-md-6 col-sm-6">
-					<div class="portlet box red-sunglo">
-						<div class="portlet-title">
-							<div class="caption" style="padding:0 0;">
-								<h4><i class="fa fa-calendar"></i> Event</h4>
-							</div>
-							<div class="actions" style="padding:0 0;">
-								<h4>Draft</h4>
-							</div>
-						</div>
-						<div class="portlet-body">
-							<div class="row">
-								<div class="col-md-12">
-									
-									<div class="col-md-8">
-										
-										<h4 style="color:#44b6ae"><span>Certified Digital  Marketing  Program </span></h4>
-										<div class="clearfix"></div>
-										<h5>
-											<span>
-												<i class="icon-pointer"></i> 10 Wilsey Square, Ridgewood, New Jersey.
-											</span>
-										</h5>
-									</div>
-									
-									<div class="col-md-4 pull-left">
-										<h5 class="pull-right">SAT, DEC 11 10:00 PM</h5>
-										<span><img src="assets\frontend\pages\img\careers\careers.jpg" style="width:100%;"></img></span>
-									</div>
-									
-								</div>
 												
-							</div>
-							<hr style="margin:10px 0"/>
-							<div class="row" style="font-size:12px">
-								<div class="col-sm-3 text-center" >
-									<!-- <a data-toggle="modal" href=".large">
-									<span><i class="fa fa-edit"></i>Edit </a> -->
-									<a href="EditEvent.html"> <span><i class="fa fa-edit"></i>Edit</span> </a>
-								</div>
-								<div class="col-sm-3 text-center">
-									<a href="view.html"><span><i class="fa fa-eye"></i> View</span></a>
-								</div>
-								<div class="col-sm-6 text-center">
-									<span><i class="fa fa-group"></i> Registered 60 of 100</span>
+											</div>
+											<!-- END CHANGE AVATAR TAB -->
+											
+											
+										</div>
+									</div></div>
 								</div>
 							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			
-			<div class="clearfix">
-			</div>
-			
-			<div class="row ">
-				<div class="col-md-6 col-sm-6">
-					<div class="portlet box blue-steel">
-						<div class="portlet-title">
-							<div class="caption" style="padding:0 0;">
-								<h4><i class="fa fa-calendar"></i> Event</h4>
-							</div>
-							<div class="actions" style="padding:0 0;">
-								<h4>Live</h4>
-							</div>
-						</div>
-						<div class="portlet-body">
-							<div class="row">
-								<div class="col-md-12">
-									
-									
-									<div class="col-md-8">
-										
-										<h4 style="color:#44b6ae"><span>Technology & Marketing Connect 2015</span></h4>
-										<div class="clearfix"></div>
-										<h5>
-											<span>
-												<i class="icon-pointer"></i> 250 E Travelar's Trail, Burnsville, Minnesota.
-											</span>
-										</h5>
-									</div>
-									
-									<div class="col-md-4 pull-left">
-										<h5 class="pull-right">SAT, JAN 11 12:00 PM</h5>
-										<span><img src="assets\frontend\pages\img\careers\careers.jpg" style="width:100%;"></img></span>
-									</div>
-									
-								</div>
-												
-							</div>
-							<hr style="margin:10px 0"/>
-							<div class="row" style="font-size:12px">
-								<div class="col-sm-3 text-center" >
-									<!-- <a data-toggle="modal" href=".large">
-									<span><i class="fa fa-edit"></i>Edit </a> -->
-									<a href="EditEvent.html"> <span><i class="fa fa-edit"></i>Edit</span> </a>
-								</div>
-								<div class="col-sm-3 text-center">
-									<a href="view.html"><span><i class="fa fa-eye"></i> View</span></a>
-								</div>
-								<div class="col-sm-6 text-center">
-									<span><i class="fa fa-group"></i> Registered 80 of 100</span>
-								</div>
-							</div>
-						</div>
-						
-					</div>
-				</div>
-				<div class="col-md-6 col-sm-6">
-					<div class="portlet box green-haze">
-						<div class="portlet-title" >
-							<div class="caption" style="padding:0 0;">
-								<h4><i class="fa fa-calendar"></i> Event</h4>
-							</div>
-							<div class="actions" style="padding:0 0;">
-								<h4>Draft</h4>
-							</div>
-						</div>
-						<div class="portlet-body">
-							<div class="row">
-								<div class="col-md-12">
-									
-									<div class="col-md-8">
-										
-										<h4 style="color:#44b6ae"><span>Startup Networking Session </span></h4>
-										<div class="clearfix"></div>
-										<h5>
-											<span>
-												<i class="icon-pointer"></i> 8000 W Sahara, Las Vegas, Nevada.
-											</span>
-										</h5>
-									</div>
-									
-									<div class="col-md-4 pull-left">
-										<h5 class="pull-right">SAT, MAY 11 10:00 PM</h5>
-										<span><img src="assets\frontend\pages\img\careers\careers.jpg" style="width:100%;"></img></span>
-									</div>
-									
-								</div>
-												
-							</div>
-							<hr style="margin:10px 0"/>
-							<div class="row" style="font-size:12px">
-								<div class="col-sm-3 text-center" >
-									
-									<!-- <a data-toggle="modal" href=".large">
-									<span><i class="fa fa-edit"></i>Edit </a> -->
-									<a href="EditEvent.html"> <span><i class="fa fa-edit"></i>Edit</span> </a>
-								</div>
-								<div class="col-sm-3 text-center">
-									<a href="view.html"><span><i class="fa fa-eye"></i> View</span></a>
-								</div>
-								<div class="col-sm-6 text-center">
-									<span ><i class="fa fa-group"></i> Registered 60 of 100</span>
-								</div>
-							</div>
-						
-							
-							
 						</div>
 					</div>
-				</div>
-			</div>
+					<!-- END PROFILE CONTENT -->
 			
-			<div class="clearfix">
-			</div>
+			
 			
 			
 			
