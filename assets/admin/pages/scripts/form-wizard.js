@@ -252,7 +252,7 @@ var FormWizard = function () {
                     if (form.valid() == false) {
                         return false;
                     }
-				alert('Finished! Hope you like it :)');
+				//alert('Finished! Hope you like it :)');
             }).hide();
 
             //apply validation on select2 dropdown value change, this only needed for chosen dropdown integration.
