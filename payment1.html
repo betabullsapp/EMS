@@ -48,39 +48,9 @@ License: You must have a valid license purchased only from themeforest(the above
 <link href="assets/admin/layout/css/custom.css" rel="stylesheet" type="text/css"/>
 <!-- END THEME STYLES -->
 <link rel="shortcut icon" href="favicon.ico"/>
-<style type="text/css">
-	.modal-content {
-	border-radius: 0px;
-	width: 100% !important;
-	 -webkit-border-radius: 5px;
-	margin-left: 15%;
-	height: 100%;
-	overflow: hidden;
-}
-
-.modal-header {
-	background: #67809F;
-	color: white;
-	width: 100%;
-}
-
-.modal-header h4 {
-	font-weight: 700;
-	width: 100%;
-}
-
-.modal-body {
-	background: #fff;
-    font-family: "Lato";
-    font-weight: 300;
-    font-size: 16px;
-    color: #555;
-}
-
-.modal-footer {
-	background: #f2f2f2;
-	margin-top: 0px; 
-	width: 100%;
+<style>
+.page-content {
+min-height:538px !important;
 }
 </style>
 </head>
@@ -102,7 +72,7 @@ License: You must have a valid license purchased only from themeforest(the above
 	<div class="page-header-inner">
 		<!-- BEGIN LOGO -->
 		<div class="page-logo">
-			<a href="dashboard.html">
+			<a href="#">
 			<img src="assets/images/logo.png" alt="logo" class="logo-default" style="margin: 7px 0px 0px -38px;!important; height: 32px;!important; width: 227px;!important;"/><!--b><h4 class="green-haze">EventManagement</h4></b-->
 			</a>
 			<div class="menu-toggler sidebar-toggler hide">
@@ -115,23 +85,12 @@ License: You must have a valid license purchased only from themeforest(the above
 		</a>
 		<!-- END RESPONSIVE MENU TOGGLER -->
 		<!-- BEGIN TOP NAVIGATION MENU -->
-		<div class="top-menu">
+		<!--<div class="top-menu">
 			<ul class="nav navbar-nav pull-right">
 				<!-- BEGIN NOTIFICATION DROPDOWN -->
 				<!-- DOC: Apply "dropdown-dark" class after below "dropdown-extended" to change the dropdown styte -->
 				
-				<!-- END NOTIFICATION DROPDOWN -->
-				<!-- BEGIN INBOX DROPDOWN -->
-				<!-- DOC: Apply "dropdown-dark" class after below "dropdown-extended" to change the dropdown styte -->
-				
-				<!-- END INBOX DROPDOWN -->
-				<!-- BEGIN TODO DROPDOWN -->
-				<!-- DOC: Apply "dropdown-dark" class after below "dropdown-extended" to change the dropdown styte -->
-				
-				<!-- END TODO DROPDOWN -->
-				<!-- BEGIN USER LOGIN DROPDOWN -->
-				<!-- DOC: Apply "dropdown-dark" class after below "dropdown-extended" to change the dropdown styte -->
-				<li class="dropdown dropdown-user">
+			<!--	<li class="dropdown dropdown-user">
 					<a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-close-others="true">
 					<img alt="" class="img-circle" src="assets/admin/layout/img/avatar3_small.jpg"/>
 					<span class="username username-hide-on-mobile">
@@ -140,41 +99,34 @@ License: You must have a valid license purchased only from themeforest(the above
 					</a>
 					<ul class="dropdown-menu dropdown-menu-default">
 						<li>
-							<a href="myprofile.html">
+							<a href="MyProfile.html">
 							<i class="icon-user"></i> My Profile </a>
 						</li>
-						<li>
-							<a href="settings.html">
-							<i class="fa fa-cog"></i> Settings 
-							</a>
-						</li>
 						
+						<li>
+							<a href="extra_lock.html">
+							<i class="icon-diamond"></i> Setting </a>
+						</li>
 						<li>
 							<a href="login.html">
 							<i class="icon-key"></i> Log Out </a>
 						</li>
 					</ul>
 				</li>
-				<!-- END USER LOGIN DROPDOWN -->
-				<!-- BEGIN QUICK SIDEBAR TOGGLER -->
-				<!-- DOC: Apply "dropdown-dark" class after below "dropdown-extended" to change the dropdown styte -->
-				<li class="dropdown dropdown-quick-sidebar-toggler">
-					
-				</li>
-				<!-- END QUICK SIDEBAR TOGGLER -->
+				
 			</ul>
 		</div>
 		<!-- END TOP NAVIGATION MENU -->
-	</div>
+</div>
 	<!-- END HEADER INNER -->
 </div>
 <!-- END HEADER -->
-<div class="clearfix">
+<!--<div class="clearfix">
 </div>
 <!-- BEGIN CONTAINER -->
 <div class="page-container">
 	<!-- BEGIN SIDEBAR -->
-	<div class="page-sidebar-wrapper">
+<!--	<div class="page-sidebar-wrapper">
 		<div class="page-sidebar navbar-collapse collapse">
 			<!-- BEGIN SIDEBAR MENU -->
 			<!-- DOC: Apply "page-sidebar-menu-light" class right after "page-sidebar-menu" to enable light sidebar menu style(without borders) -->
@@ -183,27 +135,32 @@ License: You must have a valid license purchased only from themeforest(the above
 			<!-- DOC: Set data-auto-scroll="false" to disable the sidebar from auto scrolling/focusing -->
 			<!-- DOC: Set data-keep-expand="true" to keep the submenues expanded -->
 			<!-- DOC: Set data-auto-speed="200" to adjust the sub menu slide up/down speed -->
-			<ul class="page-sidebar-menu" data-keep-expanded="false" data-auto-scroll="true" data-slide-speed="200">
+			<!--<ul class="page-sidebar-menu" data-keep-expanded="false" data-auto-scroll="true" data-slide-speed="200">
 				<!-- DOC: To remove the sidebar toggler from the sidebar you just need to completely remove the below "sidebar-toggler-wrapper" LI element -->
-				<li class="sidebar-toggler-wrapper">
+			<!--	<li class="sidebar-toggler-wrapper">
 					<!-- BEGIN SIDEBAR TOGGLER BUTTON -->
-					<div class="sidebar-toggler">
+					<!--<div class="sidebar-toggler">
 					</div>
 					<!-- END SIDEBAR TOGGLER BUTTON -->
-				</li>
+				<!--</li>
 				<!-- DOC: To remove the search box from the sidebar you just need to completely remove the below "sidebar-search-wrapper" LI element -->
-				<li class="sidebar-search-wrapper">
+				<!--<li class="sidebar-search-wrapper">
 					<!-- BEGIN RESPONSIVE QUICK SEARCH FORM -->
 					<!-- DOC: Apply "sidebar-search-bordered" class the below search form to have bordered search box -->
 					<!-- DOC: Apply "sidebar-search-bordered sidebar-search-solid" class the below search form to have bordered & solid search box -->
-					<form class="sidebar-search " action="extra_search.html" method="POST">
+					<!--<form class="sidebar-search " action="extra_search.html" method="POST">
 						<a href="javascript:;" class="remove">
 						<i class="icon-close"></i>
 						</a>
-						
-					</form>
+						<!--div class="input-group">
+							<input type="text" class="form-control" placeholder="Search...">
+							<span class="input-group-btn">
+							<a href="javascript:;" class="btn submit"><i class="icon-magnifier"></i></a>
+							</span>
+						</div-->
+					<!--</form>
 					<!-- END RESPONSIVE QUICK SEARCH FORM -->
-				</li>
+				<!--</li>
 				<li class="start active open">
 					<a href="dashboard.html">
 					<i class="icon-home"></i>
@@ -214,8 +171,8 @@ License: You must have a valid license purchased only from themeforest(the above
 					
 				</li>
 				<li>
-					<a href="createevent.html">
-					<i class="fa fa-calendar"></i>
+					<a href="CreatEevent.html">
+					<i class="icon-basket"></i>
 					<span class="title">Create New Event</span>
 					<span class="arrow "></span>
 					</a>
@@ -223,8 +180,8 @@ License: You must have a valid license purchased only from themeforest(the above
 				</li>
 				
 				<li>
-					<a href="myprofile.html">
-					<i class="icon-user"></i>
+					<a href="MyProfile.html">
+					<i class="icon-rocket"></i>
 					<span class="title">My Profile</span>
 					<span class="arrow "></span>
 					</a>
@@ -232,7 +189,7 @@ License: You must have a valid license purchased only from themeforest(the above
 				</li>
 				<li>
 					<a href="settings.html">
-					<i class="fa fa-cog"></i>
+					<i class="icon-diamond"></i>
 					<span class="title">Settings</span>
 					<span class="arrow "></span>
 					</a>
@@ -251,32 +208,27 @@ License: You must have a valid license purchased only from themeforest(the above
 		</div>
 	</div>
 	<!-- END SIDEBAR -->
-	<div class="page-content-wrapper">
-		<div class="page-content" style="min-height:1028px">
-			
+	<!--<div class="page-content-wrapper">-->
+		<div class="page-content" >
 			<!-- BEGIN PAGE HEADER-->
-			<h3 class="page-title">
-			Share Event
-			</h3>
+			
 			<div class="page-bar">
-				<ul class="page-breadcrumb">
+				<!--<ul class="page-breadcrumb">
 					<li>
 						<i class="fa fa-home"></i>
-						<a href="dashboard.html">Home</a>
+						<a href="index.html">Home</a>
 						<i class="fa fa-angle-right"></i>
 					</li>
 					<li>
-						<a href="dashboard.html">Dashboard</a>
+						<a href="#">Dashboard</a>
 						<i class="fa fa-angle-right"></i>
 					</li>
 					<li>
-						
-						<a href="view.html">Event</a>
+						<a href="#">Event</a>
 						<i class="fa fa-angle-right"></i>
 					</li>
 					<li>
-						<a href="ShareEvent.html">Share</a>
-						
+						<a href="#">Registration</a>
 					</li>
 				</ul>
 				<!--div class="page-toolbar">
@@ -285,69 +237,66 @@ License: You must have a valid license purchased only from themeforest(the above
 					</div>
 				</div-->
 			</div>
-			<!-- BEGIN SAMPLE PORTLET CONFIGURATION MODAL FORM-->
-			 <div class="col-md-3"></div>
-		  <div class="col-md-6">
-           <div class="portlet blue-hoki box">
-                <div class="portlet-title">
-                    <div class="caption">
-                      Share This Event
-                     </div>
+			<div class="col-md-4"></div>
+			
+			<div class="col-md-4">
+			
+			
+                
+				     <div class="col-md-12">
+			                    <div class="portlet blue-hoki box">
+					                <div class="portlet-title">
+						               <div class="caption">
+								          Payment
+							            </div>
+						            </div>
+				               <div class="portlet-body">
+						            
+							           
+							          <div class="row">
+							             <label for="inputEmail3" class="col-md-4 control-label margin-top-15">Amount</label>
+							              <div class="col-md-6 margin-top-15">  <input type="text" class="form-control" placeholder=""/></div>
+							          </div>
+							          <div class="row">
+							            <label for="inputEmail3" class="col-md-4 control-label margin-top-15">Enter coupon code</label>
+							              <div class="col-md-6 margin-top-15">  <input  type="text" class="form-control" placeholder="" /></div>
+					                  </div>
+                                      <div class="row">
+							              <div class="col-md-4 margin-top-15"></div>
+							              <div class="col-md-6 margin-top-15 "><button class="btn blue">Apply Discount</button></div>
+					                  </div>
+				                  
+			                 </div>
+		               </div>
                 </div>
-                    <div class="portlet-body">
-                       <div id="tree_1" class="tree-demo">
-					          <div class="from-group">
-							   <div class="row">
-							   
-							  
-							   
-								<center><a href="https://www.facebook.com"><button ><i class="fa fa-facebook"></i> Facebook</button></a>
-								<a href="https://www.twitter.com"><button ><i class="fa fa-twitter"></i> Twitter</button></a>
-								<a href="#"><button  data-toggle="modal" data-target="#basicModal"><i class="icon-share"></i> Share</button></a></center>
-								
-
-                                 <div class="modal fade" id="basicModal" tabindex="-1" role="dialog" aria-labelledby="basicModal" aria-hidden="true" style="margin:0 30%;overflow-y:hidden;">
-			                        <div class="modal-dialog" style="width:95%;margin:0 -10%">
-	    
-    	                               <div class="modal-content">
-    	   
-        	                                 <div class="modal-header">
-            	                                   <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                	                              <h4 class="modal-title labl">Event Url</h4>
-            	                              </div>
-            	                               <div class="modal-body">
-            	
-                	                              <div class="form-group">
-                		                             <a href="file:///D:/ems/changes/ems/PublicView.html">file:///D:/ems/changes/ems/PublicView.html</a> 
-                		
-                	                              </div>
-                	
-            	                             </div>
-            	                              <div class="modal-footer">
-                                                    <input type="reset" value="Cancel" class="btn btn-default" data-dismiss="modal" style="margin: 0 0"></s:reset>
-						
-        	                                  </div>
-								     </div>
-                                  </div>
-                                </div>
-
-
-							   
-							  </div>
-							  </div>
-				          </div>
-                       <div>
-                    </div>
-           </div>
-     
-		 </div>	
+	           <div class="col-md-12">
+                       <div class="portlet blue-hoki box" style="margin-top:45px;">
+				            <div class="portlet-title">
+						           <div class="caption">
+								       PayPal
+						           </div>
+				            </div>
+					        <div class="portlet-body">
+							       
+								        <div>
+										    <center><a href="https://www.paypal.com/signin/?country.x=IN&locale.x=en_IN"><img src="assets/images/paypal.png" ></a></center>
+								        
+								        </div>
+							       
+					         </div>
+			          </div>
+			  </div>
+			 </div>
+			<div class="col-md-4"></div>
+					
+		</div>
 	</div>
 </div>
 <!-- END CONTAINER -->
 <!-- BEGIN FOOTER -->
 <div class="page-footer">
 	<div class="page-footer-inner">
-		
+		2015 &copy; Event Management System. 
 	</div>
 	<div class="scroll-to-top">
 		<i class="icon-arrow-up"></i>
